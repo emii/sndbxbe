@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% set active_page = "index" %}
+{% block contents %}
+<div id="posts">
+{% for article in articles_page.object_list %} 
+		<p><h2><a href="{{ SITEURL }}/{{ article.url }}" title="permalink to {{ article.title}}">&gt;{{article.locale_date}}</a></h2>
+		<h2> // {{ article.title }}</h2>{% if article.summary %} &mdash; {{ article.summary }}{% endif %}
+		{% if article.category %}<h3> // </h3> Category: <a href="{{SITEURL}}/{{article.category}}/" title="tag">{{article.category}}</a>
+		{% else %}<h3> // </h3> Category: <a href="#" title="tag">{{DEFAULT_CATEGORY}}</a>{% endif %}
+		{% if article.tags %}<h3> // </h3>Tags: {% for tag in article.tags %}<a href="{{SITEURL}}/{{tag.url}}" title="tag">{{tag}}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</p>
+{% endfor %}
+</div>
+{% endblock %}
+{% block postsfooter %}
+<p>{% include "pagination.html" %}
+</br>Browse posts by: <a href="{{SITEURL}}" title="latest">Latest</a>, <a href="{{SITEURL}}/categories.html" title="categories">Categories</a>, <a href="{{SITEURL}}/tags.html" title="tags">Tags</a>, <a href="{{SITEURL}}/archives.html" title="archive">Archives</a></p>
+{% endblock %}

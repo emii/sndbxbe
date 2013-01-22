@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{SITENAME}} is not science</title>
+        <style type="text/css" title="layout" media="all">
+		  @import "{{SITEURL}}/static/css/solarized_dark.css";
+          @import "{{SITEURL}}/static/css/{{CSS_FILE}}";
+		  
+        </style>
+    </head>
+    {% set navigation_bar = [
+    ('/', 'index', 'blog'),
+    ('/showcase/', 'showcase', 'showcase'),
+    ('/about/', 'about', 'about')] %}
+	{% set active_page = active_page|default('index') %}
+    <body> 
+        <div id="container">
+				<div id="header">
+					<h1><a href="{{ SITEURL }}" title="home">{{SITENAME}}</a></h1>
+				</div>
+				<div id='nav'>
+					 <ul>
+						
+						{% for href, id, caption in navigation_bar %}
+						<li{% if id=='index' %} style="border-left: none;" {% endif %}><a {% if id == active_page %} class="active" {% endif %} href="{{ SITEURL }}{{ href|e }}">{{ caption|e }}</a></li>
+						{% endfor %}
+						
+						
+					</ul>
+				</div>
+				<p>Disclaimer notice: this is for now a website in development</p>
+            <div id="mainContent2">{% block title %}{% endblock %}{% block contents %}{% endblock %}</div>
+            {% block scripts %}{% endblock %}
+			<div id="posts-footer">{% block postsfooter %}{% endblock %}</div>
+		</div>
+		<div id="footer">
+			<p>sndbx.be &#169; <a href="{{SITEURL}}/about/" title="Interested in learning more about this site?">{{CURRENT_DATE.strftime('%Y')}}</a> Powered by <a href="http://getpelican.com/" title="Pelican">Pelican</a></br>handcrafted by {{AUTHOR}}</br>Last modified on {{CURRENT_DATE.isoformat()}}</p>
+		</div>
+    </body>
+</html>

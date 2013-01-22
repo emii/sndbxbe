@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block contents %}
+	<h1>{{ article.title }}</h1>
+	&mdash; written on {{ article.date.strftime('%A, %B %d, %Y') }}
+	{% if article.abstract %}
+	<blockquote><p><em>{{article.abstract}}</em></p></blockquote>
+	{% endif %}
+	{{ article.content }}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}<h1>Categories</h1>{% endblock %}
+{% block contents %}
+<div id="posts">
+
+	<ul style="list-style-type:none;">
+	{% for category, articles in categories %}
+		<li style="float: left; margin-left: 10px;"><h2><a href="{{ SITEURL }}/{{ category.url }}" id="permalink">{{category}}</a>{% if not loop.last %}, {% endif %}</h2></li>
+	{% endfor %}
+	</ul>
+
+</div>
+{% endblock %}
+{% block postsfooter %}
+<p>Browse posts by: <a href="{{SITEURL}}" title="latest">Latest</a>, <a href="{{SITEURL}}/categories.html" title="categories">Categories</a>, <a href="{{SITEURL}}/tags.html" title="tags">Tags</a>, <a href="{{SITEURL}}/archives.html" title="archives">Archives</a></p>
+{% endblock %}

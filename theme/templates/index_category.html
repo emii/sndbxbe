@@ -1,0 +1,25 @@
+{% extends "base_category.html" %}
+{% block contents %}
+<div id="showcase">
+{% for article in articles_page.object_list %} 
+{% set active_class = article.class|default('entry') %}
+		<a class="{{ active_class }}" href="{{ SITEURL }}/{{ article.url }}" title="permalink to {{ article.title}}">
+		{% if article.image_top %}<img src="{{ SITEURL }}/static/images/{{ article.image_top }}" title="{{ article.slug }}_thumbnail"/>{% endif %}
+		<h2>{{ article.title }}</h2>{% if article.abstract %}<p>{{ article.abstract }}</p>{% endif %}
+		{% if article.image_bottom %}<img src="{{ SITEURL }}/static/images/{{ article.image_bottom }}" title="{{ article.slug }}_thumbnail"/>{% endif %}</a>
+{% endfor %}
+</div>
+{% endblock %}
+{% block scripts %}
+<script>window.onload = function() {
+  var wall = new Masonry( document.getElementById('showcase'), {
+    columnWidth: 317
+  });
+};
+</script>
+<script src="{{SITEURL}}/static/scripts/masonry.min.js"></script>
+{% endblock %}
+{% block postsfooter %}
+<p>{% include "pagination.html" %}
+</br>Browse posts by: <a href="{{SITEURL}}" title="latest">Latest</a>, <a href="{{SITEURL}}/categories.html" title="categories">Categories</a>, <a href="{{SITEURL}}/tags.html" title="tags">Tags</a>, <a href="{{SITEURL}}/archives.html" title="archive">Archives</a></p>
+{% endblock %}

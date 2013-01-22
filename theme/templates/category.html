@@ -1,0 +1,5 @@
+{% if category == 'showcase' %}{% extends "index_category.html" %}{% set active_page = "showcase" %}
+{% else %}{% extends "index.html" %}{% endif %}
+{% block title %}
+<h1>Category: {{category}}</h1>
+{% endblock %}
