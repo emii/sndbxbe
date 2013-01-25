@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic|Quicksand);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic|Quattrocento+Sans:700,400,400italic,700italic);
 
 body {
 	background-color: #fafafa;
@@ -31,7 +31,7 @@ body {
 	margin: 0;
 	color:rgb(30,30,30);
 	text-decoration:none;
-	font-family:'Quicksand','Century Gothic', Helvetica, sans-serif;
+	font-family:'Quattrocento Sans','Quicksand','Century Gothic', Helvetica, sans-serif;
 	font-size:1.7em;
 }
 
@@ -149,7 +149,7 @@ color:#1985b2;
 }
 
 h1, h2, h3{
-font-family: "Quicksand","Century Gothic","Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: 'Quattrocento Sans',"Quicksand","Century Gothic","Helvetica Neue", Helvetica, Arial, sans-serif;
 font-weight:400;
 margin: 0;
 padding:0;
@@ -272,7 +272,9 @@ text-align: center;
 display:block;
 }
 
-
+pre {
+	font-size:110%;
+}
 
 
 
