@@ -1,4 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic|Allerta);
+
+@media print{
+
+.deck-container .slide h1 {
+  page-break-before: always;
+  font-family: "Allerta", sans-serif;
+  color: rgb(60,60,60);
+}
+.deck-container .slide h2 {
+  page-break-before: always;
+  font-family: "Allerta", sans-serif;
+  color: rgb(30,30,30);
+  border-bottom-color: #ccc;
+}
+}
+
 .deck-container {
   font-family: "Open Sans", sans-serif;
   font-size: 1.75em;
@@ -21,7 +37,7 @@
   color: #888;
 }
 .deck-container .slide pre {
-  border-color: #ccc;
+  font-size:90%;
 }
 .deck-container .slide code {
   color: #888;
@@ -86,3 +102,6 @@
 .deck-container.deck-menu .deck-current, .no-touch .deck-container.deck-menu .slide:hover {
   background: #ddf;
 }
+
+
+

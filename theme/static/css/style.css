@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic|Quattrocento+Sans:700,400,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic|Quattrocento+Sans:700,400,400italic,700italic|Abel);
 
 body {
 	background-color: #fafafa;
@@ -31,7 +31,7 @@ body {
 	margin: 0;
 	color:rgb(30,30,30);
 	text-decoration:none;
-	font-family:'Quattrocento Sans','Quicksand','Century Gothic', Helvetica, sans-serif;
+	font-family:'Abel','Quattrocento Sans','Quicksand','Century Gothic', Helvetica, sans-serif;
 	font-size:1.7em;
 }
 
@@ -149,7 +149,7 @@ color:#1985b2;
 }
 
 h1, h2, h3{
-font-family: 'Quattrocento Sans',"Quicksand","Century Gothic","Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: 'Abel','Quattrocento Sans',"Quicksand","Century Gothic","Helvetica Neue", Helvetica, Arial, sans-serif;
 font-weight:400;
 margin: 0;
 padding:0;
@@ -252,12 +252,23 @@ color: #fff;
 color: #fff;
 }
 
-.entry img, .entry2 img{
+.entry img{
 background-color:#fafafa;
 border:solid 1px #bbb;
 padding:3px;
 margin:3px 0;
+max-width: 279px;
 }
+
+.entry2 img{
+background-color:#fafafa;
+border:solid 1px #bbb;
+padding:3px;
+margin:3px 0;
+max-width: 592px;
+}
+
+
 
 .entry p, .entry2 p{
 line-height: 120%;
@@ -274,6 +285,12 @@ display:block;
 
 pre {
 	font-size:110%;
+	white-space: pre;
+  	white-space: pre-wrap;
+  	word-wrap: break-word;
+}
+img{
+max-width: 670px;
 }
 
 

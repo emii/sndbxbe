@@ -1,0 +1,67 @@
+Title: SVG
+Summary: SVG embedding in HTML
+Abstract: SVG are a very nice way to insert graphics in a web page or presentation
+
+- - -
+
+## [The svg](http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html#SVG_in_HTML)
+
+### This is created using just xml svg tag:
+
+	:::html
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="100">
+	   <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+	</svg> 
+
+### The result:
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="100">
+	<circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+</svg> 
+
+- - - 
+
+## SVG embedded in object tag
+
+<p style="text-align:center"><object type="image/svg+xml" data="/static/images/slides/chromatin-organization/diagram.svg" width="400px" height="400px"></object></p>
+
+### The source:
+
+	:::html
+	<p style="text-align:center;"><object type="image/svg+xml" data="/static/images/slides/chromatin-organization/diagram.svg" width="700px" height="700px">
+	</object></p>
+
+- - -
+
+## A small wasp!
+
+<p style="text-align:center"><object type="image/svg+xml" data="/static/images/slides/chromatin-organization/wasp.svg" width="100px" height="100px"></object></p>
+
+## A big wasp!
+
+<p style="text-align:center"><object type="image/svg+xml" data="/static/images/slides/chromatin-organization/wasp.svg" width="500px" height="500px"></object></p>
+
+### For other tools for SVG see: [more here](http://selection.datavisualization.ch/)
+
+* [raphaël](http://raphaeljs.com/)
+* [D3.js](http://d3js.org/)
+* [processing.js](http://processingjs.org/)
+* [sigma.js](http://sigmajs.org/)
+* [paper.js](http://paperjs.org/)
+
+## Other frameworks
+
+* [Flare](http://flare.prefuse.org/) 
+
+## Generate SCG in D3 and download it
+
+[here](http://bl.ocks.org/biovisualize/1209499)
+
+
+## Solution in matlab
+
+[here](http://www.mathworks.es/matlabcentral/fileexchange/7401) 
+
+
+
+

@@ -20,12 +20,22 @@
 
 	<!-- Style theme. More available in /themes/style/ or create your own. -->
 	<link rel="stylesheet" href="{{SITEURL}}/static/deckjs/themes/style/sndbx.css">
+	<link rel="stylesheet" href="{{SITEURL}}/static/deckjs/themes/style/solarized_dark.css">
 	
 	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
-	<link rel="stylesheet" href="{{SITEURL}}/static/deckjs/themes/transition/horizontal-slide.css">
+	<link rel="stylesheet" href="{{SITEURL}}/static/deckjs/themes/transition/fade.css">
 	
 	<!-- Required Modernizr file -->
 	<script src="{{SITEURL}}/static/scripts/modernizr.custom.js"></script>
+	
+	<!-- mathjax start -->
+	    <script type="text/x-mathjax-config">
+	        MathJax.Hub.Config({
+	            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+	        });
+	    </script>
+	    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+	<!-- mathjax end -->
 </head>
 
 <body class="deck-container">

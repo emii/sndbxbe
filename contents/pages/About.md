@@ -10,7 +10,11 @@ Sometimes I find myself (...literally) handcrafting code in  in Python, other ti
 
 Occasionally I also do real experiments, now I am learning single-molecule RNA FISH on mouse embryonic stem cells.
 
-I like simple things, like sandwiches and coffee (always nice opportunities to get to know people), I always squeeze up from the bottom on a tube of toothpaste, whatever that means, either trying to get the most of every day, or just as an obsessive-compulsive habit. I travel lite, toothbrush and towel. I am unlucky in cards
+I like simple things, like sandwiches and coffee (always nice opportunities to get to know people), I always squeeze up from the bottom on a tube of toothpaste, whatever that means, either trying to get the most of every day, or just as an obsessive-compulsive habit. I travel lite, toothbrush and towel. 
+
+I am unlucky in cards.
+
+I tend to be verbose.
 
 ##sndbx.be is not science
 

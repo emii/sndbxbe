@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.svgitem {display: inline-block; vertical-align: middle;}
+.svgitem #circleRedCircle {fill: #D00; stroke-width: 20px; stroke: white;}
+.style3 #circleRedCircle {fill: yellow; stroke-width: 5px; stroke: red;}
+.style3 #circleRedCircle:hover {stroke-width: 25px; filter: blur(10px)}
+.style3 #circleBlue:hover {fill: #F00;}
+/* playing with blur: http://css-plus.com/2012/03/gaussian-blur/ */
+.style3 #circleRedCircle:hover, .style3 #circleGreen:hover {
+  -webkit-transition: all 0.5s ease-out; 
+     -moz-transition: all 0.5s ease-out; 
+      -ms-transition: all 0.5s ease-out; 
+       -o-transition: all 0.5s ease-out; 
+          transition: all 0.5s ease-out;
+}
+.style3 #circleRedCircle:hover, .style3 #circleGreen:hover { -webkit-filter: blur(5px); filter: url(#blur-effect-1); }

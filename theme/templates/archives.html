@@ -4,11 +4,11 @@
 {% block contents %}
 <div id="posts">
 		<ul style="list-style-type:none;">
-		{% for year, date_year in dates|groupby( 'date.year' ) %}
+		{% for year, date_year in dates|groupby( 'date.year' )|reverse %}
 			<li><h2>&gt;{{ year }}</h2></li>
 				<ul style="list-style-type:none;">
-					{% for article in dates %}
-						<li><h2><a href="{{ SITEURL }}/{{ article.url }}">//{{ article.date.strftime( '%B %d' ) }}</a></h2> &mdash; {{ article.title }}</a></li>
+					{% for article in date_year %}
+						<li><h2>//<a href="{{ SITEURL }}/{{ article.url }}">{{ article.date.strftime( '%B %d' ) }}</a></h2> &mdash; {{ article.title }}</a></li>
 					{% endfor %}
 				</ul>
 		{% endfor %}
