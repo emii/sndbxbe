@@ -36,6 +36,7 @@
 	    </script>
 	    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 	<!-- mathjax end -->
+	<!-- Launch fullscreen button -->
 </head>
 
 <body class="deck-container">
@@ -43,16 +44,18 @@
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <section class="slide">
-	<h2>{{ article.title }}</h2>
-	<h3>{{article.author}}</br>{{ article.date.strftime('%A, %B %d, %Y') }}</h3>
+	<h3 style="border-bottom: 3px solid #888;padding-top:30px;">{{ article.title }}</h3>
+    <h2 style="border:none;">A glimpse into chromatin organization by HD-FISH</h2>
+	<h3 style="text-align:center;">{{article.author}}</br>{{ article.date.strftime('%A, %B %d, %Y') }}</h3>
 	{% if article.image_top %}
 	<img src="{{SITEURL}}/static/images/{{article.image_top}}">
 	{% endif %}
 	{% if article.affiliation %}
 	{% if article.place %}
-	<h3>{{article.affiliation}}</br>{{article.place}}</h3>
+	<h3 style="text-align:center;">{{article.affiliation}}</br>{{article.place}}</h3>
 	{% endif %}
 	{% endif %}
+	<p style="text-align:center;"><input type="button" id="launchBTN" value="BEGIN THE FUN!">
 </section>
 {{ article.content }}
 <!-- End slides. -->
@@ -100,9 +103,87 @@
 
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
+(function() {
+    var
+        fullScreenApi = {
+            supportsFullScreen: false,
+            isFullScreen: function() { return false; },
+            requestFullScreen: function() {},
+            cancelFullScreen: function() {},
+            fullScreenEventName: '',
+            prefix: ''
+        },
+        browserPrefixes = 'webkit moz o ms khtml'.split(' ');
+ 
+    // check for native support
+    if (typeof document.cancelFullScreen != 'undefined') {
+        fullScreenApi.supportsFullScreen = true;
+    } else {
+        // check for fullscreen support by vendor prefix
+        for (var i = 0, il = browserPrefixes.length; i < il; i++ ) {
+            fullScreenApi.prefix = browserPrefixes[i];
+ 
+            if (typeof document[fullScreenApi.prefix + 'CancelFullScreen' ] != 'undefined' ) {
+                fullScreenApi.supportsFullScreen = true;
+ 
+                break;
+            }
+        }
+    }
+ 
+    // update methods to do something useful
+    if (fullScreenApi.supportsFullScreen) {
+        fullScreenApi.fullScreenEventName = fullScreenApi.prefix + 'fullscreenchange';
+ 
+        fullScreenApi.isFullScreen = function() {
+            switch (this.prefix) {
+                case '':
+                    return document.fullScreen;
+                case 'webkit':
+                    return document.webkitIsFullScreen;
+                default:
+                    return document[this.prefix + 'FullScreen'];
+            }
+        }
+        fullScreenApi.requestFullScreen = function(el) {
+        	switch (this.prefix) {
+        	case'webkit':
+        		return el[this.prefix + 'RequestFullScreen'](Element.ALLOW_KEYBOARD_INPUT);
+        	default:
+            	return (this.prefix === '') ? el.requestFullScreen() : el[this.prefix + 'RequestFullScreen']();
+            }
+        }
+        fullScreenApi.cancelFullScreen = function(el) {
+            return (this.prefix === '') ? document.cancelFullScreen() : document[this.prefix + 'CancelFullScreen']();
+        }
+    }
+ 
+    // jQuery plugin
+    if (typeof jQuery != 'undefined') {
+        jQuery.fn.requestFullScreen = function() {
+ 
+            return this.each(function() {
+                if (fullScreenApi.supportsFullScreen) {
+                    fullScreenApi.requestFullScreen(this);
+                }
+            });
+        };
+    }
+ 
+    // export api
+    window.fullScreenApi = fullScreenApi;
+})();
 	$(function() {
 		$.deck('.slide');
 	});
+
+	if (fullScreenApi.supportsFullScreen) {
+	var myButton = document.getElementById("launchBTN");
+    myButton.addEventListener('click', function() {
+        fullScreenApi.requestFullScreen(document.documentElement);
+    }, true);
+}
 </script>
+
 </body>
 </html>
