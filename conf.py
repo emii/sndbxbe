@@ -34,7 +34,7 @@ CATEGORY_SAVE_AS = '{name}/index.html'
 PAGE_DIR = 'pages'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
-CURRENT_DATE=date.today()
+CURRENT_DATE = date.today()
 MD_EXTENSIONS = ['codehilite','extra']
 LOCALE = 'C'
 
