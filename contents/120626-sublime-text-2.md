@@ -1,24 +1,10 @@
-Date: 2012-10-29
+Date: 2012-10-10
 Title: Hello World!
-Category: blog
+Category: showcase
 Tags: misc
-Summary: This blog welcomes the strangers, and receives some sun
+Summary: The birth of a new bunch of bits in the cloud
+Abstract: The birth of a new bunch of bits in the cloud. My own personal dominion on the pandorian cybernetic landscape. The millionth sand grain on the desertic storm, and bla bla bla.
+Image_top: hello_world.png
+Class: entry2
 
-I'm happy to announce that my blog was officially released today!
-
-This is awesome news. I've spend 20+ hours a week for the past 2 months to set upo this website.
-
-## What is it?
-
-- simple
-- static
-- highlighted
-- organized
-- cheap
-
-## Beautiful
-
-As my new baby I consider it my precious 
-
-## Welcome!!
-
+![helloWorld](/images/hello_world.png)
