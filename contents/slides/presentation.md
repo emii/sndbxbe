@@ -7,7 +7,7 @@ Tags: research, slides
 Affiliation: Master in Molecular Biosciences, 	
 Place: University of Heidelberg
 Image_top: hdfish.png
-Category: slides
+Category: showcase
 Class: entry2
 
 <div class="slide" id="1"><h2>Chromatin topology plays an important role in gene regulation</h2>
