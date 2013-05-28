@@ -1,8 +1,9 @@
 Title: Compensation for transversal chromatic aberration
 Summary: Analysis and correction for the spectral 
 Abstract: The wavelength-dependency of the refraction indices in optical systems involves chromatic aberrations: one object point is not projected on exactly one image point on the sensor plane, but dispersed depending on its wavelengths in a rainbow-like manner due to the wavelength-dependency. When precise estimation of the three-dimensional position of a point is necessary &mdash;as in HD DNA&ndash;FISH experiments&mdash; the distortions have to be compensated. Here, I describe the measurement of these distortions, as well as their compensation and further evaluation.
-Tags: matlab, research, microscopy, image processing, dna-fish
-Category: research
+Category: projects
+Tags: biology, research, hd dna-fish, fitting, MATLAB, image processing, microscopy
+Date: 2013-03-20
 
 
 ## Fluorescent beads position detection and enhancement

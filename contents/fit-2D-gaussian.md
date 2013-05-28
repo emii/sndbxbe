@@ -1,7 +1,9 @@
 Title: 2D gaussian fit
 Summary: check this to see how to find parameters for 2D gaussian fit or else
 Abstract: From an image of fluorescent beads I want to find an accurate position of a diffraction limited spot, the first approach is to fit a 2D gaussian function of a window of 12 px around the centroid of a filtered and thresholded spot
-
+Category: projects
+Tags: biology, research, hd dna-fish, MATLAB, visualization, 2D, 3D, graphs, plotting, fitting
+Date: 2013-03-28
 
 ##Some useful functions in MATLAB
 

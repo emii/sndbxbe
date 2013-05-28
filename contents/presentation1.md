@@ -1,6 +1,9 @@
-Title: Lab Meeting 1
+Title: Lab Meeting in html
 Summary: lab meeting content
 Abstract: My lab metting
+Date: 2013-04-10
+Category: projects
+Tags: biology, research, hd dna-fish, master, report, presentation
 
 ## The title:
 

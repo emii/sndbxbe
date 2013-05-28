@@ -1,8 +1,9 @@
 Title: Shift correction by fitting a least-squares polynomial
 Summary: How to solve the problem of the chromatic shift by fitting a polynomial z(x,y)
 Abstract: From the image data of fluorescent beads we can estimate the shift (z) depending on the x,y position, like-wise we can estimate the shift w, from its x,y,z position?
-Category: research
-Tags: matlab, current, programming
+Category: projects
+Tags: biology, research, hd dna-fish, MATLAB, fitting, image processing
+Date: 2013-03-28
 
 ## Various useful concepts:
 

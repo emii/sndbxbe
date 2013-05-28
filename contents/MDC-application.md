@@ -1,6 +1,9 @@
 Date: 2013-02-02
 Title: MDC Berlin PHD Application
 Summary: Requirements and procedure for the application to the PhD in MDC Berlin
+Category: projects
+Tags: TODO, master, research
+
 
 ##Application#
 

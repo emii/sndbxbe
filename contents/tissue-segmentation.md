@@ -2,8 +2,8 @@ Date: 2013-01-30
 Title: Tissue Segmentation using Voronoi tesselation
 Summary: An attempt for tissue segmentation using bounded triangulations in MATLAB 
 Abstract: Tissue segmentation of single cells is a hard problem to solve by automatic procedures (i.e. watershed and level set methods), here I use semi-automatic segmentation using Delaunay triangulations of manually selected points corresponding to single cells which  
-Tags: matlab, image processing
-Category: experiments
+Tags: matlab, image processing, hd dna-fish, master, research, plotting, graphs
+Category: projects
 
 ##Main code##########
 	

@@ -1,5 +1,8 @@
 Title: Append CSS style
 Summary: how to add a css stylesheet using CSS
+Tags: web dev, html/css, javascript
+Category: sandbox
+Date: 2013-03-28
 
 ## Append the follong snnipet at the end of a .md file to include a third css file
 

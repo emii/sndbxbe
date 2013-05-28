@@ -1,7 +1,8 @@
 Title: MATLAB 3D data representations
 Summary: some examples gathered from the web and the MATLAB Documentations to present some nice plots in 3D
-Tags: data, matlab, plots
-Category: programming
+Tags: data, MATLAB, plotting, 3D, research, scripts, snnipets, gist
+Category: sandbox
+Date: 2013-01-30
 
 ##Show an image in a MATLAB 3D surface plot with a separate colormap
 

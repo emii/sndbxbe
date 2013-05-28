@@ -1,8 +1,8 @@
 Date: 2013-05-27
 Title: Other interesting groups
 Summary: Research groups I find interesting
-Category: research
-Tags: phd, current
+Category: projects
+Tags: phd, research, misc, systems biology, development, research groups
 
 ## Basel, Zurich
 

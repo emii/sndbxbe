@@ -1,6 +1,9 @@
 Title: SpotterUI
 Summary: The non-comprehensive non-end-user documentation for the MATLAB implementation of image processing of DNA-FISH
 Abstract: So much struggle with the spot identification of fluorescently labeled probes, now this has to be advanced to the precise positioning and colocalization of multi-labeled regions. Here is what I am thinking and experimenting now.
+Category: projects
+Tags: biology, research, hd dna-fish, image processing 
+Date: 2013-02-07
 
 ##Detection of colocalizations in multichannel 3D fluorescence microscopy images  
 

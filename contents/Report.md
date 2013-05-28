@@ -1,8 +1,8 @@
 Title: HD-FISH, a glimpse into chromatin organization
 Date: 2013-03-29
 Summary: The written report after finishing my internship at the van Oudenaarden lab about HD-FISH and the data analysis
-Category: report
-Tags: report, master, research
+Category: projects
+Tags: biology, research, hd dna-fish, master, report
 Abstract: Chromosomes change their  topology throughout the cell cycle varing its position and degree of compaction. This features have been observed to influence gene expression, as mutations perturbing the overall topology of the hrnuclear envelope have deleterious effects (see progeria syndrome). Previous methodologies have addressed chomatin conformation in different ways (see Hi-C, Paint probes 3D DNA FISH). However either their resolution is limited or, frequent error rate.
 
 #Introduction

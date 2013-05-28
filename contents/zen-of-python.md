@@ -1,5 +1,8 @@
 Title: The zen of python
 Summary: some nice words
+Category: texturology
+Tags: python, manifesto, programming
+Date: 2013-02-01
 
 * [here][] the original
 * over [here with examples][]

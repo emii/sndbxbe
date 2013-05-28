@@ -1,5 +1,8 @@
 Title: xkcdify MATLAB
 Summary: approached to xkcdify 2D plots in matlab
+Category: sandbox
+Tags: MATLAB, graphs, plotting, scripts, geek stuff, xkcd, 2D
+Date: 2013-03-01
 
 ## found on stackoverflow
 

@@ -1,7 +1,7 @@
 Date: 2012-11-18
 Title: Paradox
 Summary: Just a paradox
-Category: leftovers
+Category: texturology
 Tags: paradox
 
 ---

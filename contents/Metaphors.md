@@ -1,7 +1,7 @@
 Date: 2013-02-21
 Title: Metaphors
-Category: blog
-Tags: misc
+Category: texturology
+Tags: metaphors
 Summary: Oh, metaphors!
 Abstract: Señoras, señores: He consagrado mi vida a la literatura. Es decir, a leer, a disfrutar, a meditar, a sentir, a ser feliz, a comprender, a tratar de comprender y cosechar líneas y, finalmente, a ponerlas por escrito y eventualmente publicarlas.</br><p style="text-align:right;">&mdash;Jorge Luis Borges&mdash;</p>
 ##Greguerías

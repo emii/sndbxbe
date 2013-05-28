@@ -1,9 +1,9 @@
 Date: 2013-01-17
 Title: Mi sample presentation
 Summary: A sample presentation
-Category: deck
+Category: sandbox
 Template: deck
-Tags: presentation
+Tags: presentations, slides, deck, mathjax, codehilite, html/css, template
 
 <section class="slide">
 	<h1>here</h1>
