@@ -21,8 +21,8 @@
 	<link rel="stylesheet" href="{{SITEURL}}/static/deckjs/extensions/scale/deck.scale.css">
 
 	<!-- Style theme. More available in /themes/style/ or create your own. -->
-	<link rel="stylesheet" href="{{SITEURL}}/static/deckjs/themes/style/sndbx.css">
-	<link rel="stylesheet" href="{{SITEURL}}/static/deckjs/themes/style/solarized_dark.css">
+	<link rel="stylesheet" href="{{SITEURL}}/static/deckjs/themes/style/{{DECK_CSS_STYLE}}">
+	<link rel="stylesheet" href="{{SITEURL}}/static/deckjs/themes/style/{{HIGHLIGHT_CSS_FILE}}">
 	
 	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
 	<link rel="stylesheet" href="{{SITEURL}}/static/deckjs/themes/transition/fade.css">
@@ -43,7 +43,7 @@
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-41003145-1']);
+      _gaq.push(['_setAccount', '{{GA_ACCOUNT}}']);
       _gaq.push(['_trackPageview']);
 
       (function() {

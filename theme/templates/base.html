@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <title>{{SITENAME}} is not science</title>
         <style type="text/css" title="layout" media="all">
-		  @import "{{SITEURL}}/static/css/solarized_dark.css";
+		  @import "{{SITEURL}}/static/css/{{HIGHLIGHT_CSS_FILE}}";
           @import "{{SITEURL}}/static/css/{{CSS_FILE}}";
 		  
         </style>
@@ -28,7 +28,7 @@
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-41003145-1']);
+      _gaq.push(['_setAccount', '{{GA_ACCOUNT}}']);
       _gaq.push(['_trackPageview']);
 
       (function() {

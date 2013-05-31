@@ -1,13 +1,13 @@
 ## Chromatin topology plays an important role in gene regulation
-![slide1](/images/slides/chromatin-organization/slide1_2.png)
+![slide1](/static/images/slides/chromatin-organization/slide1_2.png)
 ## Distance between chromatin regions are measured from 3D positions of fluorescent spots
-![slide2](/images/slides/chromatin-organization/slide2.png)
+![slide2](/static/images/slides/chromatin-organization/slide2.png)
 ## Spots are identified for singles cells
-![spotterUI2](/images/slides/chromatin-organization/spotterUI.png)
+![spotterUI2](/static/images/slides/chromatin-organization/spotterUI.png)
 ## Precise localization of the spots is estimated and corrected for chromatic aberrations
-![gaussfit](/images/slides/chromatin-organization/slide4.png)
+![gaussfit](/static/images/slides/chromatin-organization/slide4.png)
 ## Distances within single chromosomes are measured
-![distances](/images/slides/chromatin-organization/slide5.png)
+![distances](/static/images/slides/chromatin-organization/slide5.png)
 ## Our results are in agreement with previous observations
 ![4 loci counts][4_loci_level]
 
@@ -16,7 +16,7 @@
 [4_loci_level]:/images/slides/chromatin-organization/slide6.png
 ### Outlook
 #### Combinatorial labeling provides identifiers for unique regions
-![distances](/images/slides/chromatin-organization/comb-label.png)
+![distances](/static/images/slides/chromatin-organization/comb-label.png)
 ## Concluding remarks
 
 * A major question in understanding spatial genome organization is how patterns of chromosome or loci organization are established and maintained
@@ -35,5 +35,19 @@
 
 #### at the Hubrecht Institute:
 * Alexander van Oudenaarden
+
+## try come code:
+
+	::latex::
+	begin{equation}
+	   E = mc^2
+	   e^{\pi i}+1 = 0 \frac{x}{y}
+	end{equation}
+### is translated into:
+
+\begin{equation}
+E = mc^2 \\
+e^{\pi i}+1 = 0 \frac{x}{y}
+\end{equation}
 
 </div><div class="slide" id="30" style="background-color:#000000;"><h1 style="color:#fafafa;">Thank you!</h1>

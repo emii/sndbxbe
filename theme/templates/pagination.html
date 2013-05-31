@@ -1,15 +1,23 @@
 {% if DEFAULT_PAGINATION %}
-    {% if articles_page.has_previous() %}
+    {% if category and articles_page.has_previous() %}
+        {% if articles_page.previous_page_number() == 1 %}
+            <a href="{{ SITEURL }}/{{ page_name }}index.html">&laquo; Previous</a>
+        {% else %}
+            <a href="{{ SITEURL }}/{{ page_name }}index{{ articles_page.previous_page_number() }}.html">&laquo; Previous</a>
+        {% endif %} 
+    {% elif articles_page.has_previous() %}
         {% if articles_page.previous_page_number() == 1 %}
             <a href="{{ SITEURL }}/{{ page_name }}.html">&laquo; Previous</a>
         {% else %}
             <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">&laquo; Previous</a>
-        {% endif %}
+        {% endif %} 
 	{% else %}
 		&laquo; Previous
     {% endif %}
     &mdash; {{ articles_page.number }} / {{ articles_paginator.num_pages }} &mdash;
-    {% if articles_page.has_next() %}
+    {% if category and articles_page.has_next() %}
+        <a href="{{ SITEURL }}/{{ page_name }}index{{ articles_page.next_page_number() }}.html">Next &raquo;</a>
+    {% elif articles_page.has_next() %}
         <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">Next &raquo;</a>
 	{% else %}
 		Next &raquo;

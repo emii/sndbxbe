@@ -4,7 +4,7 @@
 <div id="posts">
 {% for article in articles_page.object_list %} 
 		<p><h2>&gt;{{article.locale_date}}</h2>
-		<h2>// <a href="{{ SITEURL }}/{{ article.url }}" title="permalink to {{ article.title}}">{{ article.title }}</a></h2>{% if article.summary %} &mdash; {{ article.summary }}{% endif %}
+		<h2>// <a href="{{ SITEURL }}/{{ article.url }}" title="permalink to {{ article.title|striptags }}">{{ article.title|striptags }}</a></h2>{% if article.summary %} &mdash; {{ article.summary|striptags }}{% endif %}
 		{% if article.category %}<h3> // </h3> Category: <a href="{{SITEURL}}/{{article.category}}/" title="category">{{article.category}}</a>
 		{% else %}<h3> // </h3> Category: <a href="#" title="tag">{{DEFAULT_CATEGORY}}</a>{% endif %}
 		{% if article.tags %}<h3> // </h3>Tags: {% for tag in article.tags %}<a href="{{SITEURL}}/{{tag.url}}" title="tag">{{tag}}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</p>

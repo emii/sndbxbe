@@ -13,13 +13,13 @@ Tags: presentations, slides, deck, mathjax, codehilite, html/css, template
 </section>
 <section class="slide">
 	<h2>content</h2>
-	::latex::
-	
+
+	<pre>::latex::
 	begin{equation}
 	   E = mc^2
 	   e^{\pi i}+1 = 0 \frac{x}{y}
 	end{equation}
-	
+	</pre>
 </section>
 <section class="slide">
 	<h2>content</h2>
