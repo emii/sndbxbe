@@ -39,7 +39,7 @@ PAGE_DIR = 'pages'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 CURRENT_DATE = date.today()
-MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','attr_list', 'headerid(forceid=False)','toc']
 LOCALE = 'C'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None

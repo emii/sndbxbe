@@ -1,44 +1,13 @@
-Title: HD-FISH, a glimpse into chromatin organization
+Title: HD-FISH, a glimpse into chromatin organization (alt)
 Date: 2013-03-29
 Summary: The written report after finishing my internship at the van Oudenaarden lab about HD-FISH and the data analysis
 Category: projects
 Tags: biology, research, hd dna-fish, master, report
 Abstract: Abstract (placeholder) Chromosomes change their  topology throughout the cell cycle varing its position and degree of compaction. This features have been observed to influence gene expression, as mutations perturbing the overall topology of the nuclear envelope have deleterious effects (see progeria syndrome). Previous methodologies have addressed chomatin conformation in different ways (see Hi-C, Paint probes 3D DNA FISH). However either their resolution is limited or, frquent error rate.
 
-# Table of Contents ############
+[TOC]
 
-1. ##[Introduction](#intro)
-
-	* **Motivation**
-	* **Objectives**
-	* **System under investigation**
-
-2. ##[Experimental Approach](#approach)
-	
-	* **Experimental model**
-
-3. ##[Methodology](#methods)
-
-	* **Image acquisition**
-	* **Image analysis**
-		* Nuclei segmentation
-		* Feature Extraction 
-
-4. ##[Results and discussion](#results)
-	
-	* **Feature identification**
-	* **Chromatic aberration corrections** 
-	* **Distance calculation**
-
-5. ##[Concluding remarks](#conclusions)
-
-6. ##[References](#references)
-
-7. ##[link](|filename|Introduction.md)
-
-<div class="break"></div>
-
-# Introduction { #intro }
+# Introduction
 
 The control of gene expression in eukaryotes can be viewed as the integrated response of mechanisms working at different hierarchical levels. Gene transcription is regulated from the sequence level to chromatin level, to the nuclear level (van Driel et al. 2003). At this top-most layer, the higher order topology of the genome in the nucleus has proven to play an important role, as meaningful patterns of organization have been identified; gene-poor chromosomes are generally more frequently positioned in the outer regions of the nucleus, whereas gene-rich chromosomes adopt a more internal localization (Croft et al. 1999). Moreover, motion of genes along the radial axis of the nucleus have been observed upon gene activation, either toward the nuclear interior or toward the nuclear periphery being the former not exclusively a repressive location (Andrulis et al. 1998, Boyle et al. 2001, Casolari et al. 2005, Mesiter et al. 2010). Alongside, distributed throughout the nucleus, sets of activated genes are spatially arranged into discrete foci called transcription factories dedicated to the expression of specific combinations of genes even from distinct chromosomes (Spilianakis et al. 2005, Osborne et al. 2007, Schoenfelder et al. 2009 and 2010). This indicates that the associations at the transcriptional hot spots does not happen at random, but genes have preferential partners, commonly in a tissue specific manner. In addition, significant changes in spatial organization of genomes are triggered during cellular differentiation reflecting a dramatic change in gene expression (Kim et al. 2004).
 
@@ -85,11 +54,11 @@ Although the relative positioning between chromosomes might be cell-type specifi
 
 ##System under investigation
 
-#Experimetal Approach { #approach }
+#Experimetal Approach
 
 ##Experimental model 
 
-#Methodology { #methods }
+#Methodology
 
 ##Image acquisition
 
@@ -99,8 +68,8 @@ Although the relative positioning between chromosomes might be cell-type specifi
 
 Using DAPI staining fluorecence signal, two criteria were used for segmentation. First the nuclei were segmented using a otsu´s method for tfinding the optimal hreshold which minimizes the intra-class variance for intensity pixel values (under the assumption of a bimodal distribution), resulting in a binnary image were most of the nuclei were correctly segmented. Following this step, a second  criteria was taken into account for regions with an area above the average nuclei area (close nuclei segmented as one) covering more than one nuclei,for these regions, a subsequent segmentation using the watershed method was applyied, thus recovering the nuclei close to each other. Furthermore, nuclei adjacent to the edges of the field-of-view were discarded. Each of the resulting regions was dilated, thus preventing segmentation beneath the nuclei edges. The resulting binnary mask served to extract the following nuclei features: area, mean intensity, perimeter. This binary mask provided the 
 
-#Results and discussion { #results }
+#Results and discussion
 
-#Concluding remarks { #conclusions }
+#Concluding remarks
 
-#References { #references }
+#References

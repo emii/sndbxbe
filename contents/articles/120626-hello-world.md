@@ -7,6 +7,14 @@ Abstract: The birth of a new bunch of bits in the cloud. My own personal dominio
 Image_top: hello_world.png
 Class: entry2
 
+## This is the TOC
+
+[TOC]
+
+<div class="clear"></div>
+
+## This is an image
+
 ![helloWorld](/static/images/hello_world.png)
 
 Just for fun, this is a dummy post, just to provide some company to the first post, the "Hello World!" one. The main propose of it is exactly that. That just even with a lot of typos it gives a little bit more of content that just the first entry.

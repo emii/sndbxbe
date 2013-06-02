@@ -5,7 +5,7 @@
 {% block date %}&mdash; written on {{ article.date.strftime('%A, %B %d, %Y') }}{% endblock %}
 {% block contents %}
 	{% if article.abstract %}
-	<blockquote><p><em>{{article.abstract}}</em></p></blockquote>
+	<blockquote class="break"><p><em>{{article.abstract}}</em></p></blockquote>
 	{% endif %}
 	{{ article.content }}
 {% endblock %}

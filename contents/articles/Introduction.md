@@ -3,7 +3,7 @@ Summary: The introduction to my report
 Category: projects
 Tags: biology, research, hd dna-fish, master, report
 Date: 2013-03-28
-
+Abstract: The control of gene expression in eukaryotes can be viewed as the integrated response of mechanisms working at different hierarchical levels. Gene transcription is regulated from the sequence level to chromatin level ...
 
 The control of gene expression in eukaryotes can be viewed as the integrated response of mechanisms working at different hierarchical levels. Gene transcription is regulated from the sequence level to chromatin level, to the nuclear level (van Driel et al. 2003). At this top-most layer, the higher order topology of the genome in the nucleus has proven to play an important role, as meaningful patterns of organization have been identified; gene-poor chromosomes are generally more frequently positioned in the outer regions of the nucleus, whereas gene-rich chromosomes adopt a more internal localization (Croft et al. 1999). Moreover, motion of genes along the radial axis of the nucleus have been observed upon gene activation, either toward the nuclear interior or toward the nuclear periphery being the former not exclusively a repressive location (Andrulis et al. 1998, Boyle et al. 2001, Casolari et al. 2005, Mesiter et al. 2010). Alongside, distributed throughout the nucleus, sets of activated genes are spatially arranged into discrete foci called transcription factories dedicated to the expression of specific combinations of genes even from distinct chromosomes (Spilianakis et al. 2005, Osborne et al. 2007, Schoenfelder et al. 2009 and 2010). This indicates that the associations at the transcriptional hot spots does not happen at random, but genes have preferential partners, commonly in a tissue specific manner. In addition, significant changes in spatial organization of genomes are triggered during cellular differentiation reflecting a dramatic change in gene expression (Kim et al. 2004).
 
@@ -40,7 +40,7 @@ chromatin organization requires a comprehensive measurement of the landscape of 
 	* >_It should be noted that most ‘active’ genes are not continuously producing transcripts. Visualization of mammalian gene transcription by RNA FISH suggests it is a binary process that occurs in infrequent bursts. Gene activation is associated with relocation of genes to transcription factories, indicating that transcriptional pulses occur by virtue of dynamic associations with transcription factories._ __(plagio, Schoenfelder et al. 2010,  see also Osborne et al. 2007)__
 
 
->##can we derive a comprehensive model of how genomes are organized and function in vivo? 
+>**can we derive a comprehensive model of how genomes are organized and function in vivo?** 
 
 >_Such a model should account for the complex morphological features of the nucleus and should be consistent with the structural and dynamic properties of genomes_
 
