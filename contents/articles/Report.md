@@ -3,14 +3,51 @@ Date: 2013-03-29
 Summary: The written report after finishing my internship at the van Oudenaarden lab about HD-FISH and the data analysis
 Category: projects
 Tags: biology, research, hd dna-fish, master, report
-Abstract: Chromosomes change their  topology throughout the cell cycle varing its position and degree of compaction. This features have been observed to influence gene expression, as mutations perturbing the overall topology of the hrnuclear envelope have deleterious effects (see progeria syndrome). Previous methodologies have addressed chomatin conformation in different ways (see Hi-C, Paint probes 3D DNA FISH). However either their resolution is limited or, frequent error rate.
-
-#Introduction
-
-Various features of the nuclear architecture, including compartmentalization of molecular machines and the spatial arrangement of genomic sequences, help to carry out and regulate nuclear processes, such as DNA replication, DNA repair, gene transcription, RNA processing, and mRNA transport. Compartmentalized multiprotein complexes undergo extensive modifications or exchange of protein subunits, allowing for an exquisite dynamics of structural components and functional processes of the nucleus. The architecture of the interphase nucleus is linked to the spatial arrangement of genes and gene clusters, the structure of chromatin, and the accessibility of regulatory DNA elements. (Schneider and Grosscheld 2007)
 
 
-A cell's nucleus is a highly dynamic and highly organized structure, throughout the cell cycle has to change conformation from chromosome territories to higly packed chromosomes during mitosis. This observation suggest that the arragement is not random.
+>**Abstract (placeholder)** _Chromosomes change their  topology throughout the cell cycle varing its position and degree of compaction. This features have been observed to influence gene expression, as mutations perturbing the overall topology of the nuclear envelope have deleterious effects (see progeria syndrome). Previous methodologies have addressed chomatin conformation in different ways (see Hi-C, Paint probes 3D DNA FISH). However either their resolution is limited or, frquent error rate._
+
+# Table of Contents ############
+
+1. ##[Introduction](|filename|Introduction.md)
+
+	* **Motivation**
+	* **Objectives**
+	* **System under investigation**
+
+2. ##[Experimental Approach](|filename|Introduction.md)
+	
+	* **Experimental model**
+
+3. ##[Methodology](|filename|Introduction.md)
+
+	* **Image acquisition**
+	* **Image analysis**
+		* Nuclei segmentation
+		* Feature Extraction 
+
+4. ##[Results and discussion](|filename|Introduction.md)
+	
+	* **Feature identification**
+	* **Chromatic aberration corrections** 
+	* **Distance calculation**
+
+5. ##[Concluding remarks](|filename|Introduction.md)
+
+6. ##[References](|filename|Introduction.md)
+
+
+# Introduction #######################################
+
+The control of gene expression in eukaryotes can be viewed as the integrated response of mechanisms working at different hierarchical levels. Gene transcription is regulated from the sequence level to chromatin level, to the nuclear level (van Driel et al. 2003). At this top-most layer, the higher order topology of the genome in the nucleus has proven to play an important role, as meaningful patterns of organization have been identified; gene-poor chromosomes are generally more frequently positioned in the outer regions of the nucleus, whereas gene-rich chromosomes adopt a more internal localization (Croft et al. 1999). Moreover, motion of genes along the radial axis of the nucleus have been observed upon gene activation, either toward the nuclear interior or toward the nuclear periphery being the former not exclusively a repressive location (Andrulis et al. 1998, Boyle et al. 2001, Casolari et al. 2005, Mesiter et al. 2010). Alongside, distributed throughout the nucleus, sets of activated genes are spatially arranged into discrete foci called transcription factories dedicated to the expression of specific combinations of genes even from distinct chromosomes (Spilianakis et al. 2005, Osborne et al. 2007, Schoenfelder et al. 2009 and 2010). This indicates that the associations at the transcriptional hot spots does not happen at random, but genes have preferential partners, commonly in a tissue specific manner. In addition, significant changes in spatial organization of genomes are triggered during cellular differentiation reflecting a dramatic change in gene expression (Kim et al. 2004).
+
+Currently the chromosome is viewed as an organelle consisting of non-random, differentially and tissue specific positioned arrangement of chromosomes into functionally distinct sub-domains called chromosome territories (Cremer et al. 2006). The spatial context of a gene within the nucleus as well as within a chromosome appears to have an important role on transcriptional control.Various cell-types may possess different chromatin arrangements accounting for variability in multicellular organisms, The impact of higher order nuclear architecture on these patterns in yet unknown.()
+
+chromatin organization requires a comprehensive measurement of the landscape of interacting genomic regions.
+
+# Plagio:
+
+
 
 chromatin organization is linked to function, gene expression, can be divided in euchromartin and heterochromatin , gene-rich (internally )and gene-poor (envelope associated) regions, actively transcribed and inactive regions respectively, chromosome territory which is not randomly positioned and might be cell-type specific
 

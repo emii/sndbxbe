@@ -51,3 +51,7 @@
 .highlight .ss { color: #AA891C } /* Literal.String.Symbol */
 .highlight .bp { color: #333333 } /* Name.Builtin.Pseudo */
 .highlight .il { color: #444444 } /* Literal.Number.Integer.Long */
+
+@media print{
+.highlight  { border-bottom:1px solid #aaaaaa;}
+}

@@ -5,7 +5,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <title>{{SITENAME}} is not science</title>
-        <style type="text/css" title="layout" media="all">
+        <style type="text/css" title="layout">
 		  @import "{{SITEURL}}/static/css/{{HIGHLIGHT_CSS_FILE}}";
           @import "{{SITEURL}}/static/css/{{CSS_FILE}}";
 		  
@@ -60,13 +60,13 @@
 						
 					</ul>
 				</div>
-				<p>Disclaimer notice: this is for now a website in development</p>
-            <div id="mainContent">{% block title %}{% endblock %}{% block contents %}{% endblock %}</div>
+            <div id="mainContent">{% block title %}{% endblock %}<div id="printheader"><h2>{{AUTHOR}}</h2></div><div id="wdate">{% block date %}{% endblock %}</div>{% block contents %}{% endblock %}</div>
             {% block scripts %}{% endblock %}
 			<div id="posts-footer">{% block postsfooter %}{% endblock %}</div>
 		</div>
 		<div id="footer">
 			<p>sndbx.be &#169; <a href="{{SITEURL}}/about/" title="Interested in learning more about this site?">{{CURRENT_DATE.strftime('%Y')}}</a> Powered by <a href="http://getpelican.com/" title="Pelican">Pelican</a></br>handcrafted by {{AUTHOR}}</br>Last modified on {{CURRENT_DATE.isoformat()}}</p>
 		</div>
+
     </body>
 </html>

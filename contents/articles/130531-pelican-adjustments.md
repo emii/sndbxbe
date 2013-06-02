@@ -19,3 +19,4 @@ Modify file `generators.py` line `599`:
             logger.info('copying {} to {}'.format(sc.source_path, sc.save_as))
 
 This copies the `static`  folder from the folder `theme`, into the respective folder `static`
+

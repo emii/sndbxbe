@@ -1,12 +1,16 @@
 {% extends "base.html" %}
+{% block title %}
+<h1>{{ article.title }}</h1>
+{% endblock %}
+{% block date %}&mdash; written on {{ article.date.strftime('%A, %B %d, %Y') }}{% endblock %}
 {% block contents %}
-	<h1>{{ article.title }}</h1>
-	&mdash; written on {{ article.date.strftime('%A, %B %d, %Y') }}
 	{% if article.abstract %}
 	<blockquote><p><em>{{article.abstract}}</em></p></blockquote>
 	{% endif %}
 	{{ article.content }}
-	<p style="text-align: right;">{% if article.category %}This entry is under category: <a href="{{SITEURL}}/{{article.category}}/" title="category">{{article.category}}</a>
+{% endblock %}
+{% block postsfooter %}
+	<p>{% if article.category %}This entry is under category: <a href="{{SITEURL}}/{{article.category}}/" title="category">{{article.category}}</a>
 	{% else %}This entry is under category: <a href="#" title="category">{{DEFAULT_CATEGORY}}</a>{% endif %}
 	{% if article.tags %}</br>and was tagged as: {% for tag in article.tags %}{% if loop.last and article.tags|length() > 1 %} and {% endif %}<a href="{{SITEURL}}/{{tag.url}}" title="tag">{{tag}}</a>{% if not loop.last %}, {% else %}.{% endif %}{% endfor %}{% endif %}</p>
 {% endblock %}

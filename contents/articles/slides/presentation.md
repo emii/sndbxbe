@@ -3,7 +3,7 @@ Title: MDC Interview Week Spring 2013, Max Delbrueck Centrum, Berlin Buch
 Summary: Slides for the interview week at MDC
 Abstract: My presentation for the lab meeting April 15 - 18, 2013
 Template: deck
-Tags: research, slides
+Tags: research, slides, hd dna-fish, phd, mdc, deck
 Affiliation: Master in Molecular Biosciences, 	
 Place: University of Heidelberg
 Image_top: hdfish.png
