@@ -85,6 +85,7 @@ color: rgb(60, 60, 60);
 	text-align: left;
 	color: rgb(60, 60, 60);
 	font-size:1em;
+	position: relative;
 }
 
 #mainContent2 {
@@ -120,6 +121,39 @@ color: rgb(60, 60, 60);
 	width: 100%;
 	height: 1px;
 }
+
+/* Absolute positioned wrapper for the element you want to fix position */
+.fixed-wrapper {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: -110px; /* Move this out to the left of the site body, leaving a 20px gutter */
+}
+
+/* The element you want to fix the position of */
+.fixed {
+  width: 100px;
+  position: fixed;
+  /* Do not set top / left! */
+}
+.fixed img:hover{
+border: 1px solid #999;
+background-color: #cf0;
+}
+
+#toTop{
+  position: fixed;
+  bottom: 3px;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+#toTop img:hover{
+border: 1px solid #999;
+background-color: #cf0;
+}
+
 
 p{
 	padding: 0;
@@ -349,7 +383,7 @@ padding-right: 20px;
 body {margin:0; padding:0; line-height: 1.4em; word-spacing:1px; letter-spacing:0.2px; color: #000;background-color: #fff; font-size: 1em;}
 
 /*Remove Element*/
-#nav, #header, #posts-footer, #footer{display:none;}
+#nav, #header, #posts-footer, #footer, .fixed-wrapper, .fixed, #toTop {display:none;}
 
 a {
 		color: #000;
