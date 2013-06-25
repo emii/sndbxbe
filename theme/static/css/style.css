@@ -143,17 +143,20 @@ background-color: #cf0;
 
 #toTop{
   position: fixed;
-  bottom: 3px;
+  bottom: 0;
   width: 100%;
   left: 0;
   z-index: 1;
+  opacity: 0.8;
+  transition: padding-bottom 200ms;
+  -webkit-transition: padding-bottom 200ms;
 }
 
-#toTop img:hover{
-border: 1px solid #999;
+#toTop:hover{
+border-top: 1px solid #999;
 background-color: #cf0;
+padding-bottom: 6px;
 }
-
 
 p{
 	padding: 0;
