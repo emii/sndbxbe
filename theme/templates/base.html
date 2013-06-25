@@ -47,17 +47,15 @@
 	{% set active_page = active_page|default('index') %}
     <body> 
         <div id="container">
+
 				<div id="header">
 					<h1><a href="{{ SITEURL }}" title="home">{{SITENAME}}</a></h1>
 				</div>
 				<div id='nav'>
 					 <ul>
-						
 						{% for href, id, caption in navigation_bar %}
 						<li{% if id=='index' %} style="border-left: none;" {% endif %}><a {% if id == active_page %} class="active" {% endif %} href="{{ SITEURL }}{{ href|e }}">{{ caption|e }}</a></li>
 						{% endfor %}
-						
-						
 					</ul>
 				</div>
             <div id="mainContent">{% block title %}{% endblock %}<div id="printheader"><h2>{{AUTHOR}}</h2></div><div id="wdate">{% block date %}{% endblock %}</div>{% block contents %}{% endblock %}</div>
