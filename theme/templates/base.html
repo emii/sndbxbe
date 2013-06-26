@@ -45,8 +45,10 @@
     ('/showcase/', 'showcase', 'showcase'),
     ('/about/', 'about', 'about')] %}
 	{% set active_page = active_page|default('index') %}
-    <body> 
+    <body>
+
         <div id="container">
+        	<div id="header-wrapper">
 
 				<div id="header">
 					<h1><a href="{{ SITEURL }}" title="home">{{SITENAME}}</a></h1>
@@ -58,6 +60,8 @@
 						{% endfor %}
 					</ul>
 				</div>
+			</div>
+			<div id="my_fixable_header">...</div>
             <div id="mainContent">{% block title %}{% endblock %}<div id="printheader"><h2>{{AUTHOR}}</h2></div><div id="wdate">{% block date %}{% endblock %}</div>{% block contents %}{% endblock %}</div>
             {% block scripts %}{% endblock %}
 			<div id="posts-footer">{% block postsfooter %}{% endblock %}</div>
@@ -65,6 +69,60 @@
 		<div id="footer">
 			<p>sndbx.be &#169; <a href="{{SITEURL}}/about/" title="Interested in learning more about this site?">{{CURRENT_DATE.strftime('%Y')}}</a> Powered by <a href="http://getpelican.com/" title="Pelican">Pelican</a></br>handcrafted by {{AUTHOR}}</br>Last modified on {{CURRENT_DATE.isoformat()}}</p>
 		</div>
+		<script src="{{SITEURL}}/static/scripts/jquery-1.7.2.min.js"></script>
+<script>
+
+
+var myHeader = $('#my_fixable_header');
+myHeader.data( 'position', myHeader.position() );
+$(window).scroll(function(){
+    var hPos = myHeader.data('position'), scroll = getScroll();
+    $('#header-wrapper').css("-webkit-transform","translateY("+ (scroll.top/3) +"px)");
+    $('#my_fixable_header').css("box-shadow", "0 5px 10px 0 #bbb");
+    if ( hPos.top < scroll.top ){
+        myHeader.addClass('fixed');
+        $('#my_fixable_header').css("box-shadow", "0 5px 10px 0 #bbb");
+        $('#mainContainer').css("margin","margin: 5px auto;");
+    }
+    else {
+        myHeader.removeClass('fixed');
+        $('#mainContainer').css("margin","margin: 0 auto;");
+    }
+    
+    if (scroll.top < 200) {
+      $('#my_fixable_header').css("opacity", (scroll.top * 0.005) );
+      $('#header').css("opacity", ( 1- (scroll.top * 0.005)) );
+       $('#nav').css("opacity", ( 1- (scroll.top * 0.005)) );
+      $('#header-wrapper').css("background-color","rgba(204,255,0," + (scroll.top * 0.005) + ")");
+    } else {
+      $('#my_fixable_header').css("opacity", 1);
+        $('#header-wrapper').css("background-color","rgba(204,255,0,1)");
+    }
+   
+    
+    if ( scroll.top == 0 ){
+        $('#my_fixable_header').css("box-shadow", "none");
+        $('#my_fixable_header').css("opacity", 0);
+        $('#header').css("opacity", 1 );
+       $('#nav').css("opacity", 1 );
+        $('#header-wrapper').css("background-color","#fafafa");
+    }
+    
+    
+    
+});
+
+function getScroll () {
+    var b = document.body;
+    var e = document.documentElement;
+    return {
+        left: parseFloat( window.pageXOffset || b.scrollLeft || e.scrollLeft ),
+        top: parseFloat( window.pageYOffset || b.scrollTop || e.scrollTop )
+    };
+}
+    
+
+</script>
 		
 
     </body>
