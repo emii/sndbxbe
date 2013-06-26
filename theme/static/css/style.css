@@ -16,13 +16,47 @@ body {
 }
 #container {
 	/*width: 690px;*/
-	width: 980px;
-	margin: 0 auto;
+	width: 100%;
+	margin: 200px auto 0;
+	background-color: #fafafa;
 }
+
+#header-wrapper{
+    position: absolute;
+    width: 100%;
+	padding: 0;
+    margin: 0;
+    height:200px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fafafa;
+}
+
+#my_fixable_header{
+    background-color: #cf0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    border: 0;
+    opacity: 0;
+    text-align: center;
+    height: 5px;
+    z-index: 2;
+}
+
+.fixed {
+    top:0;
+    left:0;
+    position:fixed;
+}
+
 #header{
-	padding: 10px 20px 5px;
-	margin: 0;
-	text-align: right;
+	width:100%;
+	padding: 50px 20px 5px;
+	margin: 0 auto;
+	text-align: center;
+	opacity: 1;
 }
 
 #header h1,#header a{
@@ -36,14 +70,16 @@ body {
 
 
 #nav {
-	margin: 0;
+	width:100%;
+	margin: 0 auto;
 	padding: 0 20px 10px;
 	border:0;
 	color: rgb(60, 60, 60);
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	text-align: right;
+	text-align: center;
 	font-weight:400;
 	font-size:1em;
+	opacity: 1;
 }
 
 #nav ul
@@ -90,7 +126,7 @@ color: rgb(60, 60, 60);
 
 #mainContent2 {
 	min-height:700px;
-	margin: 0;
+	margin: 20px auto;
 	padding: 10px 8px;
 	text-align: left;
 	color: rgb(60, 60, 60);
@@ -122,24 +158,24 @@ color: rgb(60, 60, 60);
 	height: 1px;
 }
 
-/* Absolute positioned wrapper for the element you want to fix position */
+/* Absolute positioned wrapper for the element you want to fix position 
 .fixed-wrapper {
   width: 100px;
   position: absolute;
   top: 0;
-  right: -110px; /* Move this out to the left of the site body, leaving a 20px gutter */
+  right: -110px; /* Move this out to the left of the site body, leaving a 20px gutter 
 }
 
-/* The element you want to fix the position of */
+/* The element you want to fix the position of 
 .fixed {
   width: 100px;
   position: fixed;
-  /* Do not set top / left! */
+  /* Do not set top / left! 
 }
 .fixed img:hover{
 border: 1px solid #999;
 background-color: #cf0;
-}
+}*/
 
 #toTop{
   position: fixed;
