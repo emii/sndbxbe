@@ -13,7 +13,7 @@
 
 <pre style="text-align:right;">Mateos-Langerak et al. 2009 PNAS</pre>
 
-[4_loci_level]:/images/slides/chromatin-organization/slide6.png
+[4_loci_level]:/static/images/slides/chromatin-organization/slide6.png
 ### Outlook
 #### Combinatorial labeling provides identifiers for unique regions
 ![distances](/static/images/slides/chromatin-organization/comb-label.png)

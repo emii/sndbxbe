@@ -53,5 +53,3 @@ ARTICLE_DIR = 'articles'
 
 
 
-
-
