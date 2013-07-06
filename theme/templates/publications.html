@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}<h1>Publications</h1>{% endblock %}
+{% block contents %}
+<div id="posts" style="font-size:0.9em;">
+    <ol>
+    {% for ref in publications %}
+    <li id="{{ ref['key'] }}">{{ ref['author'] }}. ({{ ref['year'] }}) <a href={{ ref['url'] }}>{{ ref['title'] }}.</a> <em>{{ ref['journal'] }}</em> {{ ref['volume'] }}: {{ ref['pages'] }}.
+    </li>
+    {% endfor %}
+    </ol>
+</div>
+{% endblock %}

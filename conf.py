@@ -22,9 +22,9 @@ HIGHLIGHT_CSS_FILE = 'solarized_dark.css'
 DECK_CSS_STYLE = 'sndbx.css'
 GA_ACCOUNT = 'UA-41003145-1'
 
-SOCIAL = (('twitter', 'http://twitter.com/emiizquierdo'),
-          ('8tracks', 'http://8tracks.com/emi'),
-          ('github', 'http://github.com/emii'),)
+#SOCIAL = (('twitter', 'http://twitter.com/emiizquierdo'),
+#          ('8tracks', 'http://8tracks.com/emi'),
+#          ('github', 'http://github.com/emii'),)
 
 DEFAULT_CATEGORY = 'leftovers'
 DEFAULT_DATE_FORMAT = '%d.%m.%Y'
@@ -47,7 +47,8 @@ TRANSLATION_FEED_ATOM = None
 USE_FOLDER_AS_CATEGORY = False
 FILES_TO_COPY = [('extra/robots.txt','robots.txt'),('extra/favicon.ico','favicon.ico'),]
 ARTICLE_DIR = 'articles'
-
+PLUGIN_PATH = "plugins"
+PLUGINS = ["pelican_references",]
 
 
 

@@ -5,9 +5,19 @@
 {% block date %}&mdash; written on {{ article.date.strftime('%A, %B %d, %Y') }}{% endblock %}
 {% block contents %}
 	{% if article.abstract %}
-	<blockquote class="break"><p><em>{{article.abstract}}</em></p></blockquote>
+		<blockquote class="break"><p><em>{{article.abstract}}</em></p></blockquote>
 	{% endif %}
 	{{ article.content }}
+	{% if article.references %}
+		<div id="bibliography" style="font-size:0.9em;">
+		    <ol>
+		    {% for ref in article.references %}
+			    <li id="{{ ref['key'] }}">{{ ref['author'] }}. ({{ ref['year'] }}) <a href={{ ref['url'] }}>{{ ref['title'] }}.</a> <em>{{ ref['journal'] }}</em> {{ ref['volume'] }}: {{ ref['pages'] }}.
+			    </li>
+		    {% endfor %}
+		    </ol>
+		</div>
+	{% endif %}
 	<div id="toTop">
 	  <a href="#mainContent"><img src="/static/images/totop2.png" alt="return to top"></a>
 	</div>
