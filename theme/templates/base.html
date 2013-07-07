@@ -8,8 +8,9 @@
         <style type="text/css" title="layout">
 		  @import "{{SITEURL}}/static/css/{{HIGHLIGHT_CSS_FILE}}";
           @import "{{SITEURL}}/static/css/{{CSS_FILE}}";
-		  
+		  {% block css %}{% endblock %}
         </style>
+        <script src="{{SITEURL}}/static/scripts/jquery-1.7.2.min.js"></script>
 		<!-- Using MathJax, with the delimiters $ -->
 		<!-- Conflict with pygments for the .mo and .mi -->
 		<script type="text/x-mathjax-config">
@@ -23,22 +24,32 @@
 		  });
 		</script>
 
-		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-    {% if RELATIVE_URLS == False %}
-    <script type="text/javascript">
+	   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+        {% if RELATIVE_URLS == False %}
+            <script type="text/javascript">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '{{GA_ACCOUNT}}']);
-      _gaq.push(['_trackPageview']);
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', '{{GA_ACCOUNT}}']);
+              _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-    {% endif %}
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+            </script>
+        {% endif %}
+        {% if ENABLE_FANCYBOX == True %}
+        <script src="{{SITEURL}}/static/scripts/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".fancybox").fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none'
+                });
+            });
+        </script>
+        {% endif %}
     </head>
     {% set navigation_bar = [
     ('/', 'index', 'blog'),
@@ -69,8 +80,7 @@
 		<div id="footer">
 			<p>sndbx.be &#169; <a href="{{SITEURL}}/about/" title="Interested in learning more about this site?">{{CURRENT_DATE.strftime('%Y')}}</a> Powered by <a href="http://getpelican.com/" title="Pelican">Pelican</a></br>handcrafted by {{AUTHOR}}</br>Last modified on {{CURRENT_DATE.isoformat()}}</p>
 		</div>
-		<script src="{{SITEURL}}/static/scripts/jquery-1.7.2.min.js"></script>
-<script>
+<script type="text/javascript">
 
 
 var myHeader = $('#my_fixable_header');

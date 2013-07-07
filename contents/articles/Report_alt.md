@@ -105,24 +105,36 @@ Custom MATLAB software was implemented for the serial semi-automated identificat
 
 **Nuclei segmentation**
 
-Using DAPI staining fluorecence signal, two criteria were used for segmentation. First the nuclei were segmented using Otsu´s method for finding the optimal threshold which minimizes the intra-class variance for intensity pixel values (under the assumption of a bimodal distribution), resulting in a binnary image were most of the nuclei were correctly segmented (**see figure 3**). Following this step, a second criterium was taken into account for regions with an area above the average nuclei area (undersegmentation). For these regions, a subsequent segmentation using the watershed method was applyied, thus recovering the nuclei close to each other. Furthermore, nuclei adjacent to the edges of the _field-of-view_ were discarded. Each of the resulting regions was dilated, thus preventing segmentation beneath the nuclei edges. The resulting binnary mask served to extract different nuclear features: area, mean intensity, perimeter, center of mass, etc.
+Using DAPI staining fluorecence signal, two criteria were used for segmentation. First the nuclei were segmented using Otsu´s method for finding the optimal threshold which minimizes the intra-class variance for intensity pixel values (under the assumption of a bimodal distribution), resulting in a binnary image were most of the nuclei were correctly segmented (**see figure 3**). Following this step, a second criterium was taken into account for regions with an area above the average nuclei area (undersegmentation). For these regions, a subsequent segmentation using the watershed method was applyied, thus recovering the nuclei close to each other. Furthermore, nuclei adjacent to the edges of the _field-of-view_ were discarded. Each of the resulting regions was dilated, thus preventing segmentation beneath the nuclei edges. The resulting binnary mask served to extract different nuclear features: area, mean intensity, perimeter, center of mass, etc. as well as for spot identification proposes.
 
 **Spot identification**
 
 Non-uniform background was removed, and signal-to-noise ratio was enhanced by applying 3D Laplacian of Gaussian convolution. The optimal size of this filter (corresponding to the width of the Gaussian) depends on the size of the observed particle and was empirically adjusted to maximize the signal of the particles. 
 
-Due to recidual uniform noise, further use of a threshold is needed. First the number of spots is calculated as a function of monotonically increasing thresholds, then a single threshold is manually chosen from a normally observed plateau corresponding to a range of thresholds over which the total number of detected spots in the field-of-view does not vary.Thresholds chosen in this plateau yielded spot detections that matched the spots identified by eye (**see figure 3b**). Finally, the volume, mean intensity and _coarse position_ was determined for single spots.  
+Due to recidual uniform noise, further use of a threshold is needed. First the number of spots is calculated as a function of monotonically increasing thresholds, then a single threshold is manually chosen from a normally observed plateau corresponding to a range of thresholds over which the total number of detected spots in the field-of-view does not vary.Thresholds chosen in this plateau yielded spot detections that matched the spots identified by eye (**see figure 3b**). Finally, the volume, mean intensity and _coarse center position_ was determined for individual spots.  
 
-#Results and discussion
+# Results and discussion
+
+## Precise spot localization
+
+Once the coarse center position of the spots is determined we proceeded with the estimation of the precise position of the spots. The 2D image intensity profile can be well represented by a 2D gaussian function (i.e. eq 1 below).
+
+\\begin{equation\*}
+	f(x,y) = A \exp\left(- \left(\frac{(x-x_o)^2}{2\sigma^2} + \frac{(y-y_o)^2}{2\sigma^2} \right)\right) + b
+\\end{equation\*}
+
+Based on this gaussian function, the 2D intensity model parameters are obtained which fit the original image intensity distribution in a window of a 6px radius from the calculated coarse position; both the width and precise position of the spot in x and y can be estimated, aditionally we can also estimate the intensity background for which we later correct. The starting values for the model paramenters are determined as follows: $x_o$ and $y_o$ from the coarse center positions, $\sigma = 1.5$, in this case we assume that the spot is circular in 2D an thus $\sigma$ is the same in both dimensions. 
+
+The model is   
+
+
 
 **Spotter UI**
-
-A pipeline and Graphical User Interface (GUI) which help to analyze multi-channel fluorescence microscopy images. The aim of this work is to assess chromosomal organization by High-resolution DNA fluorescence in situ hybridization (HD-DNA FISH). Using a fluorescence microscope Magda acquired about XXX from both 3F3 human fibroblasts and Human Mammary Epithelial cells (HME). Both, chromosomes 1 and 17 were visualized by genomically-equidistant set of fluorescently-labeld DNA-FISH probes. In this study a GUI was developed to analyze the generated three-channel 3D microscopy images to extract information about position and colocalization of the spotter chromosomal regions.
 
 
 _HD-FISH_ slides where imaged and the probes' spots detected in different channels. For each channel, the acquired image stack of 15 planes in depth was filtered and thresholded to automatically detect the coarse position of the single beads in a 3D space (1024px × 1024px × 15 planes). The threshold was set automatically for a reference channel as the intensity value for which the inverse of the coefficient of variation was the highest. The threshold for the remaining channels was selected for the detected beads to be close if not the same in number to the ones detected on the reference channel. For each channel, the detected coarse positions (x,y) where enhanced for precision by fitting a 2D Gaussian function to the original image intensity distribution in a window of a 6px radius from the calculated coarse position. For the z coordinate position, the intensity profile along the z-depth was calculated in the (x,y) coordinates previously calculated, then, a 1D Gaussian function was fitted, and the
 
-<img src="/static/images/slides/chromatin-organization/spotterUI.png" style="background-color:#fafafa; border: none;">
+<a class="fancybox" rel="hdfish" href="/static/images/slides/chromatin-organization/spotterUI.png" title="4 loci experiment" target="_blank"><img src="/static/images/slides/chromatin-organization/spotterUI.png" style="background-color:#fafafa; border: none;" alt="" /></a>
 <p class="caption"><strong>Figure 3.</strong> SpotterUI GUI</p>
 
 
@@ -133,8 +145,14 @@ _HD-FISH_ slides where imaged and the probes' spots detected in different channe
 	* shift correction
 		2D approach
 		3D approach
-* 4 loci experiment
-We simultaneously targeted multiple loci separated evenly on chromosomes 1 and 17 using probes labeled with two alternating fluoreophores
+
+## 4 loci experiment
+
+
+<a class="fancybox" rel="hdfish" href="/static/images/slides/chromatin-organization/OL_008.png" title="4 loci experiment" target="_blank">
+<img src="/static/images/slides/chromatin-organization/OL_008.png" style="background-color:#fafafa; border: none;" alt=""/></a>
+<p class="caption"><strong>Figure X.</strong>We simultaneously targeted multiple loci separated evenly on chromosomes 1 and 17 using probes labeled with two alternating fluoreophores Both, chromosomes 1 and 17 were visualized by genomically-equidistant set of fluorescently-labeld DNA-FISH probes.</p>
+
 	* application of the pipeline and correction and everythign
 	* clustering and data analysis
 
