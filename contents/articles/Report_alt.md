@@ -79,9 +79,10 @@ DNA has to be optimally folded to fit in the reduced volume of the nucleus conse
 
 Here we approached the distribution of distances between genomic regions during interphase regardless of the cell type, thus obviating tissue specific differences.
 
-For a population of cells we performed _HD-FISH_, image acquisition of several _fields-of-view_ and carried out image and statistical data analysis.
+For a population of cells we performed _HD-FISH_, image acquisition of several _fields-of-view_ and carried out image and statistical data analysis. Moreover, we integrated the data analysis workflow in a custom based semi-automated graphical implementation using MATLAB.
 
 #Experimetal Approach
+---
 
 ## Cell culture and fluorescence in situ hybridization.
 
@@ -105,58 +106,160 @@ Custom MATLAB software was implemented for the serial semi-automated identificat
 
 **Nuclei segmentation**
 
-Using DAPI staining fluorecence signal, two criteria were used for segmentation. First the nuclei were segmented using Otsu´s method for finding the optimal threshold which minimizes the intra-class variance for intensity pixel values (under the assumption of a bimodal distribution), resulting in a binnary image were most of the nuclei were correctly segmented (**see figure 3**). Following this step, a second criterium was taken into account for regions with an area above the average nuclei area (undersegmentation). For these regions, a subsequent segmentation using the watershed method was applyied, thus recovering the nuclei close to each other. Furthermore, nuclei adjacent to the edges of the _field-of-view_ were discarded. Each of the resulting regions was dilated, thus preventing segmentation beneath the nuclei edges. The resulting binnary mask served to extract different nuclear features: area, mean intensity, perimeter, center of mass, etc. as well as for spot identification proposes.
+Using DAPI staining fluorescence signal, two criteria were used for segmentation. First the nuclei were segmented using Otsu´s method for finding the optimal threshold which minimizes the intra-class variance for intensity pixel values (under the assumption of a bimodal distribution), resulting in a binary image were most of the nuclei were correctly segmented (**see figure 3**). Following this step, a second criterium was taken into account for regions with an area above the average nuclei area (undersegmentation). For these regions, a subsequent segmentation using the watershed method was applied, thus recovering the nuclei close to each other. Furthermore, nuclei adjacent to the edges of the _field-of-view_ were discarded. Each of the resulting regions was dilated, thus preventing segmentation beneath the nuclei edges. The resulting binary mask served to extract different nuclear features: area, mean intensity, perimeter, center of mass, etc. as well as for assigning the spots to cells.
 
 **Spot identification**
 
-Non-uniform background was removed, and signal-to-noise ratio was enhanced by applying 3D Laplacian of Gaussian convolution. The optimal size of this filter (corresponding to the width of the Gaussian) depends on the size of the observed particle and was empirically adjusted to maximize the signal of the particles. 
+For each fluorescence-channel image stack, non-uniform background was removed, and signal-to-noise ratio was enhanced by applying 3D Laplacian of Gaussian convolution. The optimal size of this filter (corresponding to the width of the Gaussian) depends on the size of the observed particle and was empirically adjusted to maximize the signal of the particles. 
 
-Due to recidual uniform noise, further use of a threshold is needed. First the number of spots is calculated as a function of monotonically increasing thresholds, then a single threshold is manually chosen from a normally observed plateau corresponding to a range of thresholds over which the total number of detected spots in the field-of-view does not vary.Thresholds chosen in this plateau yielded spot detections that matched the spots identified by eye (**see figure 3b**). Finally, the volume, mean intensity and _coarse center position_ was determined for individual spots.  
+Due to residual uniform noise, further use of a threshold is needed. First the number of spots is calculated as a function of monotonically increasing thresholds, then a single threshold was manually chosen from a normally observed plateau corresponding to a range of thresholds over which the total number of detected spots in the field-of-view does not vary.Thresholds chosen in this plateau yielded spot detections that matched the spots identified by eye (**see figure 3b**). Finally, the volume, mean intensity and _coarse center position_ (as the center of mass of the intensities in the identified connected component) was determined for individual spots.  
 
 # Results and discussion
 
+---
+
 ## Precise spot localization
 
-Once the coarse center position of the spots is determined we proceeded with the estimation of the precise position of the spots. The 2D image intensity profile can be well represented by a 2D gaussian function (i.e. eq 1 below).
+Once the _coarse center position_ of the spots is determined, we proceeded with the estimation of the precise position of the spots. The 2D image intensity $(x,y)$ profile can be well represented by a 2D Gaussian function (i.e. eq. _(1)_ below).
+
+![Dot image](/static/images/slides/chromatin-organization/dot_image.png)
+<p class="caption"><strong>Figure 3.</strong> Distribution of image intensities can be approached with Gaussian functions. In the figure, a smoothened surface of image intensities in 2D and 2D image of maximum projection across the depth axis for different planes</p>
+
+Based on the eq. _(1)_, the 2D intensity model parameters are obtained to fit the $xy$ maximum-projection image intensity distribution in a window of a 6 pixels radius from the calculated coarse position (**see figure 4A,C**); $A$ is the maximum intensity, $x$ and $y$ are the center of the 2D Gaussian and $\\sigma_*$ is the width of the spots, additionally we can also estimate the intensity background $b$ for which we later get an average and correct for the whole slide.
+
+\\begin{equation}
+	f(x,y) = A \exp\left(- \left(\frac{(x-x_o)^2}{2\sigma_x^2} + \frac{(y-y_o)^2}{2\sigma_y^2} \right)\right) + b
+\\end{equation}
+
+After getting the precise $(x,y)$ position, the intensity profile of this position along the z-axis was used to fit the following 1D Gaussian function (**see figure 4B**):
+
+\\begin{equation}
+	f(z) = A \exp \left( -\frac{(z-z_o)^2}{2\sigma_z^2}\right)
+\\end{equation}
+ 
+Both models are fitted using maximum likelihood estimates. The starting values for the model parameters are determined as follows: $A$ as the maximum intensity value in the spot window, $x$, $y$, $z$ from the coarse center positions, $\sigma$ fixed to 1.5. We assume that the spot is spherical in 3D, thus. $\sigma$ is equally initialized in all dimensions. 
+
+![Gaussian Fit][gaussian_fit]
+<p class="caption"><strong>Figure 4.</strong> Precise localization is estimated from parametric fitting of 2D and 1D Gaussian functions for individual spots. <strong>A.</strong> Surface fit from the maximum projection over the <em>xy</em>-plane z-depth intensity profile. <strong>B.</strong> Curve fit from the maximum projection over the <em>xz</em>-plane y-depth intensity profile. <strong>C.</strong> Overlay of the resulting Gaussian surface over the image. <strong>D.</strong> Precise spot localization is shown in red while the blue circle shows the estimated spot size with a diameter corresponding to the _FWHM_ (full width half maximum) of the Gaussian function; additionally, position of the same bead in other channels is shown.</p>
+
+[gaussian_fit]: /static/images/slides/chromatin-organization/2D_Gaussian_1D_gaussian.png
+
+As a result, we got measurements of the precise spot localization, background corrected intensity distribution, and estimated volume from the _FWHM_. Additionaly we used the _goodness of fit_ to infere spots closer to each other than the size of the spot window, those were discarded for subsequent analyis; however, further improvement can be achieved by fitting a mixture of multi-variate gaussians to estimate the localization of multiple spots within a spot window.
+
+Despite these measurements, still an estimation of the error and extent of precision was not performed. From previous experience we know that the resolution is within 20 and 30 nm ([Semrau et al. XXX](#SemrauXXX)) , however this might vary across microscope setups. The experiment for the precision assessment would be as follows: Iterative imaging and estimation of the precise spot localization should yield a distribution of $x,y,z$ localization coordinates for which the variance would serve as a measure for resolution.
+
+## Chromatic aberration corrections
+
+The wavelength-dependency of the refraction indices in optical systems involves _chromatic aberrations_: one object point is not projected on exactly one image point on the sensor plane, but dispersed depending on its wavelengths. When precise estimation of the three-dimensional position of a point is necessary —as in HD–FISH experiments— the distortions have to be compensated.
+
+To this end commercial fluorescent beads where imaged and detected in different channels. For each channel, the acquired image stack of 15 planes in depth was filtered and thresholded to automatically detect the coarse position of the single beads in a 3D space (1024px $\times$ 1024px $\times$ 15 planes). The threshold was set automatically for a reference channel as the intensity value for which the inverse of the coefficient of variation was the highest. The threshold for the remaining channels was selected for the detected beads to be close if not the same in number to the ones detected on the reference channel. For each channel, the detected coarse positions $(x,y,z)$ where enhanced for precision by fitting Gaussian functions as prevously described in [precise spot localization](#precise-spot-localization) section.
+
+**Registration and shift measurement**
+
+Since the corresponding signals of a bead in different channel do not co-localize, first we had to find the signals corresponding to the same single bead. This might be trivial for low density beads in the _field-of-view_, however it proved to be difficult on high density number of beads or mis-assignment due to other factors as debris and bead movement between channel acquisition. For each channel, we assigned a connection between the selected reference bead and its closest neighboring bead signals regardless of the channel, under the assumption that the position difference between channel signals is minimal, and the closest signals correspond to the same bead. Then we used this information to build an undirected adjacency matrix where an edge was assigned every time we found a neighboring connection between two bead signals. This criteria allowed us to build independent and completely connected graphs called _cliques_, which correspond to single beads (**see figure 5 top**). High density of beads allowed to better capture the shift distribution within the _field-of-view_.
+
+![Beads identification][beads_labeled]
+
+[beads_labeled]: /static/images/slides/chromatin-organization/beads_identification.png
+
+![Beads dense][beads_dense]
+
+[beads_dense]: /static/images/slides/chromatin-organization/beads_dense_panels.png
+
+<p class="caption"><strong>Figure 5.</strong> beads registration</p>
+
+With this method we achieved the correct identification of most of the beads; outliers for the distance between signals associated with a single bead were discarded for further analysis. Once the beads where "registered", the shift $\\Delta$ (extent of _chromatic aberration_) from a reference channel $ref$, was calculated in each direction ($x$,$y$ or $z$) for each bead $i$ in each channel $ch$ as follows:
 
 \\begin{equation\*}
-	f(x,y) = A \exp\left(- \left(\frac{(x-x_o)^2}{2\sigma^2} + \frac{(y-y_o)^2}{2\sigma^2} \right)\right) + b
+\Delta^{ch}\_{xi} = x^{ch}_i - x^{ref}_i \\\\
+\Delta^{ch}\_{yi} = y^{ch}_i - y^{ref}_i \\\\
+\Delta^{ch}\_{zi} = z^{ch}_i - z^{ref}_i \\\\
 \\end{equation\*}
 
-Based on this gaussian function, the 2D intensity model parameters are obtained which fit the original image intensity distribution in a window of a 6px radius from the calculated coarse position; both the width and precise position of the spot in x and y can be estimated, aditionally we can also estimate the intensity background for which we later correct. The starting values for the model paramenters are determined as follows: $x_o$ and $y_o$ from the coarse center positions, $\sigma = 1.5$, in this case we assume that the spot is circular in 2D an thus $\sigma$ is the same in both dimensions. 
+Then for each channel we formulated the shift $\\Delta$ as a function of the three-dimesional localization:
 
-The model is   
+\\begin{equation\*}
+\Delta^{ch}\_{x}= f(x,y,z)\\\\
+\Delta^{ch}\_{y} = f(x,y,z)\\\\
+\Delta^{ch}\_{z} = f(x,y,z)
+\\end{equation\*}
 
+As expected, we observed that the extent of distortions was waveleght dependent, and the shift magnitudes vary for distinct fluorescence channel (**se figure 6**)
 
+![uncorrected](/static/images/slides/chromatin-organization/uncorrected.png)
+<p class="caption"><strong>Figure 6.</strong> For visualization proposes, the shift (before correction) $\\Delta$ for each channel (A594, Cy5, GFP and TMR) from a reference channel (DAPI) is ploted as a function of a single dimension in one of each three directions ($x$, $y$ and $z$).</p>
 
-**Spotter UI**
+**Shift correction model fitting**
 
+To interpolate the shift for the whole volume we selected polynomial functions due to their smoothness, thus reducing the irregularities due to thermal noise which could still be captured by using other interpolating approaches. Thus, ﬁfth-order polynomials were fit to the measured shifts (separately for each dimension, see eq. 3). The order of the polynomial was empiricaly selected such that the residual shift was the least.
 
-_HD-FISH_ slides where imaged and the probes' spots detected in different channels. For each channel, the acquired image stack of 15 planes in depth was filtered and thresholded to automatically detect the coarse position of the single beads in a 3D space (1024px × 1024px × 15 planes). The threshold was set automatically for a reference channel as the intensity value for which the inverse of the coefficient of variation was the highest. The threshold for the remaining channels was selected for the detected beads to be close if not the same in number to the ones detected on the reference channel. For each channel, the detected coarse positions (x,y) where enhanced for precision by fitting a 2D Gaussian function to the original image intensity distribution in a window of a 6px radius from the calculated coarse position. For the z coordinate position, the intensity profile along the z-depth was calculated in the (x,y) coordinates previously calculated, then, a 1D Gaussian function was fitted, and the
+\\begin{equation}
+	\Delta^{ch}\_{dim}(x,y,z) = a_{n,n,n}x^ny^nz^n + a_{n,,n,n-1}x^ny^nz^{n-1} + a_{n,n-1,n}x^ny^{n-1}z^n + \ldots + a_{1,0,0}x + a_{0,1,0}y + + a_{0,0,1}z + a_{0,0,0}
+\\end{equation}
+
+The resulting polynomial functions were at some extent similar for different channels. For both $x$ and $y$ directions, the shift magnitudes were mostly in a lateral gradient, being positive in one extreme, and negative in the other (***see figure 7**). Meanwhile, the interpolating function corresponding to the $z$ direction was observed to be focal with a grater displacement at the outer regions of the _field-of-view_. 
+
+![shiftw](/static/images/slides/chromatin-organization/shoftw.png)
+<p class="caption"><strong>Figure 7.</strong> all shifts</p>
+
+By using fluorescent beads, in this first approach for interpolating the shift, we failed to capture the contribution of the distortion along the $z$ dimension since the totallity of the beads were localized at the same z-depth (data not shown). Alternatively, and more optimally, we performed a second experiment where we used _primary human foreskin fibroblasts_ to capture the range in z-depth at which the genomic regions could be localized. To this end, intervealved probes distinctively label were designed to target a single genomic region. To achieve a high density of localizations, after hybridization, the coverslip was imaged by moving the _field-of-view_, thus a single region was imaged at different positions throughout one single _field-of-view_ and afterwards the prevously described analysis was made. The resulting interpolating functions are show above on **figure 7**. 
+
+![corrected](/static/images/slides/chromatin-organization/corrected.png)
+<p class="caption"><strong>Figure 8.</strong> For visualization proposes, the shift (after correction) $\\Delta$ for each channel (A594, Cy5, GFP and TMR) from a reference channel (DAPI) is ploted as a function of a single dimension in one of each three directions ($x$, $y$ and $z$).</p>
+
+![TMR shift][tmr_shift]
+
+[tmr_shift]: /static/images/slides/chromatin-organization/tmr_calibXY.jpg
+
+<p class="caption"><strong>Figure 9.</strong> Overlay of fluorescent beads imaged in different channels, before and after correction.</p>
+
+Our approach resulted in a set of polynomial functions which served to correct the shift for each fluorescent channel, in every direction as a function of its _three-dimensional position_ (**see figure 6**). A reduction in the shift up to less that 1px was achieved (**see figure 8**). We observed a better result when correcting for shifts in the planar directions than in the depth direction. 
+
+One drawback of the correction for chromatic aberrations is that they depend on the experimental setup, and small changes in variables as are the imaging medium and slight movements of the objective are prone to change the shift pattern, thus, the measurement of the shift magnitudes has to be performed in an individual experiment basis, thus increasing the time and labor required for each image acquisition step.
+
+## SpotterUI
+
+The prevously described approaches to the precise localization of genomic regions were integrated into a custom Graphical User Interphase (_SpotterUI_) written in MATLAB (**see figure 10**). This semi-automated software includes various features that simplify the identification and estimation of the precise spot localizations from _HD-FISH_ experiments. Automatic and manual segmentation, annotations for single nuclei, and overlayed figure creation are some of the general tools featured in the program. More over, quantitative measures like nuclei section area, DAPI average intensiy measures, background correction and also measurments for individual spots are estimated. Among the few settings that have to be tuned and especified in a configuration file are the width and size of the filters, number of thresholds for finding the threshold plateau, average nuclei sectional area, voxel size, etc. 
+
+Within the same user interface, the shift-interpolating functions can be generated from images with fiducial probes like fluorescent beads, later, this polynomial functions are stored in a file which can be later used to batch correct actual experiment spot locations.
 
 <a class="fancybox" rel="hdfish" href="/static/images/slides/chromatin-organization/spotterUI.png" title="4 loci experiment" target="_blank"><img src="/static/images/slides/chromatin-organization/spotterUI.png" style="background-color:#fafafa; border: none;" alt="" /></a>
-<p class="caption"><strong>Figure 3.</strong> SpotterUI GUI</p>
-
-
-* The one loci multi FOV experiment
-	* coarse localization
-	* precise spot localizationgaussian fitting
-	All Gaussian para- meters were obtained by maximum likelihood estimation. Three
-	* shift correction
-		2D approach
-		3D approach
+<p class="caption"><strong>Figure 10.</strong> SpotterUI GUI</p>
 
 ## 4 loci experiment
 
+In a proof of concet experiment, _HD-FISH_ probes were designed to evenly target 4 regions within the chromosome 17 of _HME cells_. Spotted regions were visualized by genomically-equidistant set of fluorescently-labeld probes. Both Alexa594 and Cy5 labeled spots were interleaved with a distance of about 10Mb between each other (**see figure 11**).
+
+![4 loci](/static/images/slides/chromatin-organization/4_loci.png)
+<p class="caption"><strong>Figure 11.</strong> Experimental setup</p>
+
+In total we acquired 21 _fields-of-view_ comprising a total of 235 nuclei in varying cell-cycle stages (**see figure 12**). With the help of the _SpotterUI_ we segmented, identified, corrected and processed the set of acquired image stacks. 
 
 <a class="fancybox" rel="hdfish" href="/static/images/slides/chromatin-organization/OL_008.png" title="4 loci experiment" target="_blank">
 <img src="/static/images/slides/chromatin-organization/OL_008.png" style="background-color:#fafafa; border: none;" alt=""/></a>
-<p class="caption"><strong>Figure X.</strong>We simultaneously targeted multiple loci separated evenly on chromosomes 1 and 17 using probes labeled with two alternating fluoreophores Both, chromosomes 1 and 17 were visualized by genomically-equidistant set of fluorescently-labeld DNA-FISH probes.</p>
+<p class="caption"><strong>Figure 12.</strong>We simultaneously targeted multiple loci separated evenly on chromosomes 1 and 17 using probes labeled with two alternating fluoreophores </p>
+
+
+
+[4_loci_counts]: /static/images/slides/chromatin-organization/4_loci_counts.png
+
+![4 loci conf][kmeans]
+
+[kmeans]: /static/images/slides/chromatin-organization/4_loci_conf.png
+
+![4 loci counts][4_loci_conf2]
+
+[4_loci_conf2]: /static/images/slides/chromatin-organization/configurations_of_dots2.png
+
+![4 loci counts][4_loci_dists1]
+
+[4_loci_dists1]: /static/images/slides/chromatin-organization/more_counts.png
 
 	* application of the pipeline and correction and everythign
 	* clustering and data analysis
 
 #Concluding remarks
+---
 
 #Aknowledgements
 

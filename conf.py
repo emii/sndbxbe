@@ -49,7 +49,7 @@ FILES_TO_COPY = [('extra/robots.txt','robots.txt'),('extra/favicon.ico','favicon
 ARTICLE_DIR = 'articles'
 PLUGIN_PATH = "plugins"
 PLUGINS = ["pelican_references",]
-ENABLE_FANCYBOX == False;
+ENABLE_FANCYBOX = True
 
 
 

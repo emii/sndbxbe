@@ -201,6 +201,10 @@ p{
 	font-size:1.05em;
 }
 
+strong{
+	color: rgb(100, 100, 100);
+}
+
 a {
 	text-decoration:none;
 }
