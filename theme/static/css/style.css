@@ -118,7 +118,7 @@ color: rgb(60, 60, 60);
 	width: 670px;
 	margin: 0 auto;
 	padding: 10px 8px;
-	text-align: left;
+	text-align: justify;
 	color: rgb(60, 60, 60);
 	font-size:1em;
 	position: relative;
@@ -446,11 +446,12 @@ padding-right: 20px;
 		font-weight: normal;}
 
 .caption{
-	margin: -0.9em 0 0;
+	margin: -0.9em auto 0;
 	font-size: 0.9em;
 	border: 1px #bbb solid;
 	padding: 6px 10px;
 	background-color: #fff;
+	width:100%;
 }
 
 .hidden{display: none;}

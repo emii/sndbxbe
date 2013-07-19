@@ -1,4 +1,4 @@
-Title: HD-FISH, a glimpse into chromatin organization
+Title: HD-FISH, a glimpse into chromatin organization_
 Date: 2013-06-27
 Summary: The written report after finishing my internship at the van Oudenaarden lab about HD-FISH and the data analysis
 Category: projects
