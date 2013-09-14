@@ -43,9 +43,13 @@
         <script src="{{SITEURL}}/static/scripts/jquery.fancybox.pack.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-                $(".fancybox").fancybox({
+                $('.fancybox').fancybox({
                 openEffect  : 'none',
-                closeEffect : 'none'
+                closeEffect : 'none',
+                padding : 0,
+                helpers : {
+                    title : null            
+                    }  
                 });
             });
         </script>
@@ -75,6 +79,7 @@
 			<div id="my_fixable_header">...</div>
             <div id="mainContent">{% block title %}{% endblock %}<div id="printheader"><h2>{{AUTHOR}}</h2></div><div id="wdate">{% block date %}{% endblock %}</div>{% block contents %}{% endblock %}</div>
             {% block scripts %}{% endblock %}
+            <div class="clear"></div>
 			<div id="posts-footer">{% block postsfooter %}{% endblock %}</div>
 		</div>
 		<div id="footer">

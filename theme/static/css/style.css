@@ -243,7 +243,8 @@ h1, h2, h3{
 }
 
 #posts-footer{
-text-align:center;
+	text-align:center;
+	margin-top: 20px;
 }
 
 #posts h1, #posts h2, #posts h3{
@@ -267,6 +268,12 @@ display:inline;
 
 }
 
+#mainContent img{
+margin:3px auto;
+text-align: center;
+display:block;
+}
+
 
 #showcase{
 clear: both;
@@ -275,6 +282,8 @@ margin-top: 20px;
 padding:0;
 height: auto;
 }
+
+
 
 .entry{
 	position:relative;
@@ -374,10 +383,21 @@ padding:0;
 margin:3px 0;
 }
 
-#mainContent img{
-margin:0 auto;
-text-align: center;
-display:block;
+.fancybox{
+margin:0;
+padding: 0;
+}
+
+.album-item{
+	float: left;
+	position: relative;
+	padding:3px;
+	margin:2px;
+	background-color: #fff;
+	border:solid 1px #bbb;
+	/*background-color: #eee;*/
+	/*background-color: transparent;*/
+	/*width: 285px;*/
 }
 
 .clear{clear: both;}

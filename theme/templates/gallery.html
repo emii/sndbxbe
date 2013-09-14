@@ -1,0 +1,13 @@
+{% extends "base_category.html" %}
+{% block css %}@import "{{SITEURL}}/static/css/jquery.fancybox.css";{% endblock %}
+{% block contents %}
+		{% for album, images in page.gallery.iteritems() %}
+			    {% for image in images %}
+			    	<a class="fancybox" rel="gallery" href="{{ SITEURL }}/static/images/gallery/{{album}}/{{ image }}" title="{{ image }}"><img class="album-item" src="{{ SITEURL }}/static/images/thumbnails/{{album}}/{{ image }}"/></a>
+	    		{% endfor %}
+		{% endfor %}
+{% endblock %}
+{% block postsfooter %}
+	<p>
+	</br>Browse posts by: <a href="{{SITEURL}}" title="latest">Latest</a>, <a href="{{SITEURL}}/categories.html" title="categories">Categories</a>, <a href="{{SITEURL}}/tags.html" title="tags">Tags</a>, <a href="{{SITEURL}}/archives.html" title="archive">Archives</a></p>
+{% endblock %}

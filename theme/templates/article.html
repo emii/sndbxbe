@@ -9,6 +9,11 @@
 		<blockquote class="break"><p><em>{{article.abstract}}</em></p></blockquote>
 	{% endif %}
 	{{ article.content }}
+	{% if article.gallery %}
+		    {% for image in article.galleryimages %}
+		    <a class="fancybox" title="{{ image }}" rel= "{{ article.album }}" href="{{ SITEURL }}/static/images/gallery/{{ article.album }}/{{ image }}"><img class="album-item" src="{{ SITEURL }}/static/images/thumbnails/{{ article.album }}/{{ image }}"/></a>
+		    {% endfor %}
+	{% endif %}
 	{% if article.references %}
 		<div id="bibliography" style="font-size:0.9em;">
 		    <ol>

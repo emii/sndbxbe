@@ -8,8 +8,9 @@
         <style type="text/css" title="layout" media="all">
 		  @import "{{SITEURL}}/static/css/{{HIGHLIGHT_CSS_FILE}}";
           @import "{{SITEURL}}/static/css/{{CSS_FILE}}";
-		  
+		  {% block css %}{% endblock %}
         </style>
+    <script src="{{SITEURL}}/static/scripts/jquery-1.7.2.min.js"></script>
     {% if RELATIVE_URLS == False %}
     <script type="text/javascript">
 
@@ -25,6 +26,22 @@
 
     </script>
     {% endif %}
+    {% if ENABLE_FANCYBOX == True %}
+        <script src="{{SITEURL}}/static/scripts/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.fancybox').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+                padding : 0,
+                helpers : {
+                    title : null            
+                    }  
+                });
+            });
+        </script>
+    {% endif %}
+
     </head>
     {% set navigation_bar = [
     ('/', 'index', 'blog'),
@@ -56,7 +73,6 @@
 		<div id="footer">
 			<p>sndbx.be &#169; <a href="{{SITEURL}}/about/" title="Interested in learning more about this site?">{{CURRENT_DATE.strftime('%Y')}}</a> Powered by <a href="http://getpelican.com/" title="Pelican">Pelican</a></br>handcrafted by {{AUTHOR}}</br>Last modified on {{CURRENT_DATE.isoformat()}}</p>
 		</div>
-        <script src="{{SITEURL}}/static/scripts/jquery-1.7.2.min.js"></script>
 <script type="text/javascript">
 
 

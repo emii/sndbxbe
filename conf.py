@@ -13,13 +13,16 @@ DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'en'
 RELATIVE_URLS = True
 OUTPUT_PATH = 'output/'
-DELETE_OUTPUT_DIRECTORY = True
-STATIC_PATHS = ['images']
+DELETE_OUTPUT_DIRECTORY = False
+#folders to be copied to output static
+STATIC_PATHS = ['images','documents']
 #PAGINATED_DIRECT_TEMPLATES = ['index']
 #THEME_STATIC_PATHS = ['static']
+#created css files for different proposes
 CSS_FILE = 'style.css'
 HIGHLIGHT_CSS_FILE = 'solarized_dark.css'
 DECK_CSS_STYLE = 'sndbx.css'
+#API key for google analytics
 GA_ACCOUNT = 'UA-41003145-1'
 
 #SOCIAL = (('twitter', 'http://twitter.com/emiizquierdo'),
@@ -39,17 +42,25 @@ PAGE_DIR = 'pages'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 CURRENT_DATE = date.today()
+#some extensions to make sure pygments, anchors on headers and TOC work fine
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra','attr_list', 'headerid(forceid=False)','toc']
 LOCALE = 'C'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 USE_FOLDER_AS_CATEGORY = False
-FILES_TO_COPY = [('extra/robots.txt','robots.txt'),('extra/favicon.ico','favicon.ico'),]
+FILES_TO_COPY = [('extra/robots.txt','robots.txt'),('extra/favicon.ico','favicon.ico')]
 ARTICLE_DIR = 'articles'
+#plugins
 PLUGIN_PATH = "plugins"
-PLUGINS = ["pelican_references",]
+PLUGINS = ["pelican_references","pelican_gallery","pelican_thumbnailer"]
+#enable fancybox for galleries
 ENABLE_FANCYBOX = True
+#implementation for image galleries
+IMAGE_PATH = "images/gallery"
+THUMBNAIL_DIR = "static/images/thumbnails"
+THUMBNAIL_SIZES = {'thumbnail_wide' : '200x?'} 
+
 
 
 
