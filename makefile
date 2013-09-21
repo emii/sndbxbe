@@ -2,6 +2,7 @@ ifeq ($(OS),Windows_NT)
 
 	RM = del /s /q
 	FixPath = $(subst /,\,$1)
+	SEP = &
 
     CCFLAGS += -D WIN32
     ifeq ($(PROCESSOR_ARCHITECTURE),AMD64)
@@ -15,6 +16,7 @@ else
 
 	RM = rm -rf
 	FixPath = $1
+	SEP = ;
 
     UNAME_S := $(shell uname -s)
     ifeq ($(UNAME_S),Linux)
@@ -42,16 +44,15 @@ OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 SETTINGS = conf.py
 
 serve: deploy
-	cd $(ODIR)
-	python -m SimpleHTTPServer 
-
-render: clean
-	pelican -s $(SETTINGS)
+	cd $(ODIR) $(SEP) python -m SimpleHTTPServer 
 
 deploy: render
 	git add -A
 	git commit -m 'update'
 	git push
+
+render: clean
+	pelican -s $(SETTINGS)
 
 clean:
 	$(RM) $(call FixPath, $(OBJ))
