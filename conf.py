@@ -50,7 +50,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 USE_FOLDER_AS_CATEGORY = False
 FILES_TO_COPY = [('extra/robots.txt','robots.txt'),('extra/favicon.ico','favicon.ico')]
-ARTICLE_DIR = 'drafts'
+ARTICLE_DIR = 'articles'
 #plugins
 PLUGIN_PATH = "plugins"
 PLUGINS = ["pelican_references","pelican_gallery","pelican_thumbnailer"]
