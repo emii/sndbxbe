@@ -75,6 +75,12 @@
 	<p style="text-align:center;"><input type="button" id="launchBTN" value="BEGIN THE FUN!">
 </section>
 {{ article.content }}
+
+{% if article.gallery %}
+            {% for image in article.galleryimages %}
+            <div class="slide" style="background-color:#000000;"><img src="{{ SITEURL }}/static/images/gallery/{{ article.album }}/{{ image }}"></div>
+            {% endfor %}
+{% endif %}
 <!-- End slides. -->
 
 

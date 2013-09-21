@@ -1,11 +1,15 @@
 {% extends "base_category.html" %}
 {% block css %}@import "{{SITEURL}}/static/css/jquery.fancybox.css";{% endblock %}
 {% block contents %}
+		{% if page.gallery %}
 		{% for album, images in page.gallery.iteritems() %}
 			    {% for image in images %}
 			    	<a class="fancybox" rel="gallery" href="{{ SITEURL }}/static/images/gallery/{{album}}/{{ image }}" title="{{ image }}"><img class="album-item" src="{{ SITEURL }}/static/images/thumbnails/{{album}}/{{ image }}"/></a>
 	    		{% endfor %}
 		{% endfor %}
+		{% else %}
+			<p>Gellery is empty</p>
+		{% endif %}
 {% endblock %}
 {% block postsfooter %}
 	<p>

@@ -243,6 +243,7 @@ h1, h2, h3{
 }
 
 #posts-footer{
+	clear: both;
 	text-align:center;
 	margin-top: 20px;
 }
