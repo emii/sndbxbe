@@ -13,8 +13,10 @@
 		    {% for image in article.galleryimages %}
 		    <a class="fancybox" title="{{ image }}" rel= "{{ article.album }}" href="{{ SITEURL }}/static/images/gallery/{{ article.album }}/{{ image }}"><img class="album-item" src="{{ SITEURL }}/static/images/thumbnails/{{ article.album }}/{{ image }}"/></a>
 		    {% endfor %}
+		    <div class = "clear"></div>
 	{% endif %}
 	{% if article.references %}
+	<h1>References</h1>
 		<div id="bibliography" style="font-size:0.9em;">
 		    <ol>
 		    {% for ref in article.references %}

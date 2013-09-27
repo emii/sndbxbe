@@ -50,10 +50,10 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 USE_FOLDER_AS_CATEGORY = False
 FILES_TO_COPY = [('extra/robots.txt','robots.txt'),('extra/favicon.ico','favicon.ico')]
-ARTICLE_DIR = 'articles'
+ARTICLE_DIR = 'drafts'
 #plugins
 PLUGIN_PATH = "plugins"
-PLUGINS = ["pelican_references","pelican_gallery","pelican_thumbnailer"]
+PLUGINS = ["pelican_references",]#"pelican_gallery","pelican_thumbnailer"]
 #enable fancybox for galleries
 ENABLE_FANCYBOX = True
 #implementation for image galleries

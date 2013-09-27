@@ -2,17 +2,21 @@ ifeq ($(OS),Windows_NT)
 
 	RM = del /s /q
 	FixPath = $(subst /,\,$1)
-	SEP = &
+	AND = &
 else
 
 	RM = rm -rf
 	FixPath = $1
-	SEP = ;
+	AND = ;
 endif
 
-CONTDIR= contents/articles
-_CONT= *.md slides/*.md
-CONTENTS = $(patsubst %,$(CONTDIR)/%,$(_CONT))
+CONTENTS= contents/articles
+#_CONT_ART= *.md slides/*.md
+#CONTENTS = $(patsubst %,$(CONTDIR)/%,$(_CONT))
+
+DRAFTS= contents/drafts
+#_CONT_DRFT= *.md slides/*.md
+#DRAFTS = $(patsubst %,$(CONTDIR)/%,$(_CONT))
 
 ODIR= output
 _OBJ= *.html static/css/style.css
@@ -20,21 +24,18 @@ _OBJ= *.html static/css/style.css
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 SETTINGS = conf.py
 
-.PHONY: serve deploy render clean #not objects
+contents:
+	pelican -s $(SETTINGS) -o $(ODIR) -r
 
-serve: deploy
-	cd $(ODIR) $(SEP) python -m SimpleHTTPServer 
+serve:
+	cd $(ODIR) $(AND) python -m SimpleHTTPServer 
 
-deploy: render
+deploy:
 	git add -A
 	git commit -m 'update'
 	git push
 
-render: clean
-	pelican -s $(SETTINGS)
-
-clean: $(CONTENTS)
+clean:
 	$(RM) $(call FixPath, $(OBJ))
 
-$(CONTENTS):
-	@echo checking $@
+.PHONY: contents draft serve deploy clean #not objects

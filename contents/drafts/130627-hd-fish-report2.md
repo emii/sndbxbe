@@ -272,5 +272,3 @@ This project was closely and jointly developed with Magda Bienko &mdash; without
 * **Structure:** The arrangement of and relations between the parts or elements of something complex.
 * **Topology:** The study of geometric properties and spatial relations unaffected by the continuous change of shape or size of figures.
 * **Architecture:** The conceptual structure and logical organization of something.>
-
-#References and relevant literature
