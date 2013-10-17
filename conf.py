@@ -49,8 +49,8 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 USE_FOLDER_AS_CATEGORY = False
-FILES_TO_COPY = [('extra/robots.txt','robots.txt'),('extra/favicon.ico','favicon.ico')]
-ARTICLE_DIR = 'drafts'
+EXTRA_PATH_METADATA = {'extra/robots.txt':{'path':'robots.txt'},'extra/favicon.ico':{'path':'favicon.ico'}, 'documents':{'path':'documents'}}
+ARTICLE_DIR = 'articles'
 #plugins
 PLUGIN_PATH = "plugins"
 PLUGINS = ["pelican_references",]#"pelican_gallery","pelican_thumbnailer"]
@@ -60,9 +60,3 @@ ENABLE_FANCYBOX = True
 IMAGE_PATH = "images/gallery"
 THUMBNAIL_DIR = "static/images/thumbnails"
 THUMBNAIL_SIZES = {'thumbnail_wide' : '200x?'} 
-
-
-
-
-
-
