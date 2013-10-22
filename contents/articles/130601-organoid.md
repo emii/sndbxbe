@@ -78,7 +78,7 @@ two-photon microscopy, two near-infrared photons
 <a class="fancybox" rel="organoid" href="/static/images/organoid/quantitative-workflow.png" title="organoid"><img src="/static/images/organoid/quantitative-workflow.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org8" /></a>
 <p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Organoid stinings ([Moore et al. 2013](#Moore2013))</p>
 
-<a>class="fancybox" rel="organoid" href="/static/images/organoid/tracking-hypotesis.png" title="organoid"><img src="/static/images/organoid/tracking-hypotesis.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org14" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/tracking-hypotesis.png" title="organoid"><img src="/static/images/organoid/tracking-hypotesis.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org14" /></a>
 <p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Organoid stinings ([Barker et al. 2007](#Barker2007))</p>
 
 <a class="fancybox" rel="organoid" href="/static/images/organoid/image-analysis_workflow.png" title="organoid"><img src="/static/images/organoid/image-analysis_workflow.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org9" /></a>
