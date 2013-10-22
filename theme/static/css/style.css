@@ -479,6 +479,14 @@ padding-right: 20px;
 
 .hidden{display: none;}
 
+.img-print{
+	display:none;
+}
+
+.caption-print{
+	display:none;
+}
+
 
 @media print {
 
@@ -524,6 +532,31 @@ h1{
 #wdate{
 	display: block;
 	text-align: right;
+}
+
+.img-print{
+	display:block;
+	margin: 0 auto;
+
+}
+
+img{
+	max-width: 648px;
+	max-height: 400px;
+	background-color: #fff;
+	border: 1px #bbb solid;
+	padding:10px;
+}
+
+.caption-print{
+	display:block;
+	clear: both;
+	margin: 5px auto 0;
+	font-size: 0.9em;
+	border: 1px #bbb solid;
+	padding: 6px 10px;
+	background-color: #fff;
+	width:60%;
 }
 
 .break { page-break-after: always;}
