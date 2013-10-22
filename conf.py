@@ -56,7 +56,6 @@ STATIC_SAVE_AS = 'static/{path}'
 STATIC_URL = 'static/{path}'
 STATIC_PATHS = ['extra/robots.txt',
                 'extra/favicon.ico',
-                'images',
                 'documents']
 EXTRA_PATH_METADATA = {'extra/robots.txt':{'path':'../robots.txt'},'extra/favicon.ico':{'path':'../favicon.ico'},}
 #plugins

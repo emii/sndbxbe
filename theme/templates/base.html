@@ -47,9 +47,32 @@
                 openEffect  : 'none',
                 closeEffect : 'none',
                 padding : 0,
+                beforeLoad: function() {
+                    var el, id = $(this.element).data('title-id');
+
+                    if (id) {
+                        el = $('#' + id);
+                    
+                        if (el.length) {
+                            this.title = el.html();
+                        }
+                    }
+                },
+                afterShow: function() {
+                    $(".fancybox-title").wrapInner('<div />').show();
+                    
+                    $(".fancybox-wrap").hover(function() {
+                        $(".fancybox-title").show();
+                    }, function() {
+                        $(".fancybox-title").hide();
+                    });
+                },
                 helpers : {
-                    title : null            
-                    }  
+                    title: {
+                        type: 'over'
+                    }
+                }
+
                 });
             });
         </script>

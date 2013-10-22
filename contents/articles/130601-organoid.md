@@ -1,4 +1,4 @@
-Date: 2013-09-26
+Date: 2013-10-26
 Title: Image analysis of <em>Organoid</em> primary cell culture
 Category: projects
 Tags: research, organoid, image processing, HCI
@@ -57,34 +57,34 @@ two-photon microscopy, two near-infrared photons
 
 
 
-<a class="fancybox" rel="organoid" href="/static/images/organoid/villus-crypt.png" title="organoid"><img src="/static/images/organoid/villus-crypt.png" style="background-color:#fff; max-width: 60%;" alt="org1" /></a>
-<p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Villus-crypt structure ([Reya & Clevers 2005](#Reya2005))</p>
+<a class="fancybox" rel="organoid" data-title-id="caption-1" href="/static/images/organoid/villus-crypt.png" title="click to enlarge"><img src="/static/images/organoid/villus-crypt.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="click to enlarge" /></a>
+<div id="caption-1" class="caption" style="width: 60%;"><strong>Figure 2. </strong>Villus-crypt structure Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus imperdiet gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent aliquam posuere urna, a malesuada leo sagittis eu. Etiam fringilla feugiat vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer fermentum justo magna, ut tincidunt orci egestas at. Etiam dui nisl, ultrices blandit ipsum vel, venenatis condimentum tortor. Etiam interdum rutrum elit id gravida ([Reya & Clevers 2005](#Reya2005)).</p></div>
 
-<a class="fancybox" rel="organoid" href="/static/images/organoid/villi-crypt-stains.png" title="organoid"><img src="/static/images/organoid/villi-crypt-stains.png" style="background-color:#fff; max-width: 60%;" alt="org2" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/villi-crypt-stains.png" title="organoid"><img src="/static/images/organoid/villi-crypt-stains.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org2" /></a>
 <p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Organoid stinings ([Barker et al. 2007](#Barker2007))</p>
 
-<a class="fancybox" rel="organoid" href="/static/images/organoid/quantitative-workflow2.png" title="organoid"><img src="/static/images/organoid/quantitative-workflow2.png" style="background-color:#fff; max-width: 60%;" alt="org3" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/quantitative-workflow2.png" title="organoid"><img src="/static/images/organoid/quantitative-workflow2.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org3" /></a>
 <p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Organoid stinings ([Keller 2009](#Keller2009))</p>
 
-<a class="fancybox" rel="organoid" href="/static/images/organoid/organoid-growth2.png" title="organoid"><img src="/static/images/organoid/organoid-growth2.png" style="background-color:#fff; max-width: 60%;" alt="org4" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/organoid-growth2.png" title="organoid"><img src="/static/images/organoid/organoid-growth2.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org4" /></a>
 <p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Organoid growth ([Sato & Clevers 2013](#Sato2013))</p>
 
 <a class="fancybox" rel="organoid" href="/static/images/organoid/organoid-structure-morphogenesis.png" title="organoid"><img src="/static/images/organoid/organoid-structure-morphogenesis.png" style="background-color:#fff; max-width: 60%;" alt="org5" /></a>
-<p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Organoid growth ([Sato & Clevers 2013](#Sato2013))</p>
+<p class="caption" style="width: 60%; max-height: 400px;"><strong>Figure 2. </strong>Organoid growth ([Sato & Clevers 2013](#Sato2013))</p>
 
-<a class="fancybox" rel="organoid" href="/static/images/organoid/organoid-structure.png" title="organoid"><img src="/static/images/organoid/organoid-structure.png" style="background-color:#fff; max-width: 60%;" alt="org7" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/organoid-structure.png" title="organoid"><img src="/static/images/organoid/organoid-structure.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org7" /></a>
 <p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Organoid structure ([Sato et al. 2009](#Sato2009))</p>
 
-<a class="fancybox" rel="organoid" href="/static/images/organoid/quantitative-workflow.png" title="organoid"><img src="/static/images/organoid/quantitative-workflow.png" style="background-color:#fff; max-width: 60%;" alt="org8" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/quantitative-workflow.png" title="organoid"><img src="/static/images/organoid/quantitative-workflow.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org8" /></a>
 <p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Organoid stinings ([Moore et al. 2013](#Moore2013))</p>
 
-ga class="fancybox" rel="organoid" href="/static/images/organoid/tracking-hypotesis.png" title="organoid"><img src="/static/images/organoid/tracking-hypotesis.png" style="background-color:#fff; max-width: 60%;" alt="org14" /></a>
+<a>class="fancybox" rel="organoid" href="/static/images/organoid/tracking-hypotesis.png" title="organoid"><img src="/static/images/organoid/tracking-hypotesis.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org14" /></a>
 <p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Organoid stinings ([Barker et al. 2007](#Barker2007))</p>
 
-<a class="fancybox" rel="organoid" href="/static/images/organoid/image-analysis_workflow.png" title="organoid"><img src="/static/images/organoid/image-analysis_workflow.png" style="background-color:#fff; max-width: 60%;" alt="org9" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/image-analysis_workflow.png" title="organoid"><img src="/static/images/organoid/image-analysis_workflow.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org9" /></a>
 <p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Organoid stinings ([Barker et al. 2007](#Barker2007))</p>
 
-<a class="fancybox" rel="organoid" href="/static/images/organoid/edge_penalty.png" title="organoid"><img src="/static/images/organoid/edge_penalty.png" style="background-color:#fff; max-width: 60%;" alt="org10" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/edge_penalty.png" title="organoid"><img src="/static/images/organoid/edge_penalty.png" style="background-color:#fff; max-width: 60%; max-height: 400px;" alt="org10" /></a>
 <p class="caption" style="width: 60%;"><strong>Figure 2. </strong>Edge Penalty</p>
 
 ## Logistic function
@@ -103,5 +103,20 @@ f(x) = \frac{1}{1 + e^{-B_{o}x}}
 
 <a class="fancybox" rel="organoid" href="/static/images/organoid/organoid_segmentation.gif" title="organoid"><img src="/static/images/organoid/organoid_segmentation.gif" style="background-color:#fff; max-width: 60%;" alt="org12" /></a>
 <p class="caption" style="width: 60%;"><strong>Figure 2. </strong>The organoid segmentation</p>
+
+**Screenshots**
+
+<a class="fancybox" rel="organoid" href="/static/images/organoid/ilastik_main_2.png" title="organoid"><img class="album-item" src="/static/images/organoid/ilastik_main_2.png" style="background-color:#fff; max-width: 210px; margin-left: 5px;" alt="org1" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/ilastik_training.png" title="organoid"><img class="album-item" src="/static/images/organoid/ilastik_training.png" style="background-color:#fff; max-width: 210px; margin-left: 5px;" alt="org1" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/ilastic_predictions.png" title="organoid"><img class="album-item" src="/static/images/organoid/ilastic_predictions.png" style="background-color:#fff; max-width: 210px; margin-left: 5px;" alt="org1" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/ilastik_object_extraction_2.png" title="organoid"><img class="album-item" src="/static/images/organoid/ilastik_object_extraction_2.png" style="background-color:#fff; max-width: 210px; margin-left: 5px;" alt="org1" /></a>
+<a class="fancybox" rel="organoid" href="/static/images/organoid/ilastik_cell_class.png" title="organoid"><img class="album-item" src="/static/images/organoid/ilastik_cell_class.png" style="background-color:#fff; max-width: 210px; margin-left: 5px;" alt="org1" /></a>
+<p class="caption" style="width: 90%;"><strong>Figure 2. </strong>The organoid segmentation</p>
+
+
+
+
+
+
 
 

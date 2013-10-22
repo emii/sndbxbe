@@ -468,6 +468,7 @@ padding-right: 20px;
 		font-weight: normal;}
 
 .caption{
+	clear: both;
 	margin: -0.9em auto 0;
 	font-size: 0.9em;
 	border: 1px #bbb solid;
