@@ -1,0 +1,2027 @@
+<?xml version="1.0" encoding="utf-8"?><gexf xmlns:ns0="http://www.gexf.net/1.1draft/viz" version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="CCL2" label="CCL2">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="99.1444861374" y="13.052619222" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="CCL3" label="CCL3">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="92.3879532511" y="38.2683432365" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="LIF" label="LIF">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="86.6025403784" y="-50.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="CCL7" label="CCL7">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="70.7106781187" y="70.7106781187" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="CCL4" label="CCL4">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="86.6025403784" y="50.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="CCL5" label="CCL5">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="79.3353340291" y="60.8761429009" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="T-cells" label="T-cells">
+        <ns0:color b="152" g="161" r="42" />
+        <ns0:size value="15" />
+        <ns0:position x="8.68240888335" y="49.2403876506" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cell" />
+        </attvalues>
+      </node>
+      <node id="NGF" label="NGF">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="96.5925826289" y="-25.8819045103" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="MIF" label="MIF">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-92.3879532511" y="-38.2683432365" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="PDGF" label="PDGF">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-86.6025403784" y="-50.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="NK-cells" label="NK-cells">
+        <ns0:color b="152" g="161" r="42" />
+        <ns0:size value="15" />
+        <ns0:position x="-25.0" y="-43.3012701892" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cell" />
+        </attvalues>
+      </node>
+      <node id="IL1B" label="IL1B">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="25.8819045103" y="-96.5925826289" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL1RN" label="IL1RN">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-86.6025403784" y="50.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="TNF-alpha" label="TNF-alpha">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="99.1444861374" y="-13.052619222" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL6" label="IL6">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-99.1444861374" y="-13.052619222" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="CD54" label="CD54">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-50.0" y="86.6025403784" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IFN-alpha" label="IFN-alpha">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-60.8761429009" y="79.3353340291" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="SCF" label="SCF">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-79.3353340291" y="-60.8761429009" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL7" label="IL7">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="70.7106781187" y="-70.7106781187" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="VEGF-A" label="VEGF-A">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-50.0" y="-86.6025403784" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="G-CSF" label="G-CSF">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="38.2683432365" y="92.3879532511" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="bFGF" label="bFGF">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-25.8819045103" y="96.5925826289" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL10" label="IL10">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-38.2683432365" y="-92.3879532511" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="B-cells" label="B-cells">
+        <ns0:color b="152" g="161" r="42" />
+        <ns0:size value="15" />
+        <ns0:position x="8.68240888335" y="-49.2403876506" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cell" />
+        </attvalues>
+      </node>
+      <node id="CCL27" label="CCL27">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="96.5925826289" y="25.8819045103" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL18" label="IL18">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-99.1444861374" y="13.052619222" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="fibroblasts" label="fibroblasts">
+        <ns0:color b="152" g="161" r="42" />
+        <ns0:size value="15" />
+        <ns0:position x="38.3022221559" y="32.1393804843" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cell" />
+        </attvalues>
+      </node>
+      <node id="IL2RA" label="IL2RA">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-92.3879532511" y="38.2683432365" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="macrophages" label="macrophages">
+        <ns0:color b="152" g="161" r="42" />
+        <ns0:size value="15" />
+        <ns0:position x="-25.0" y="43.3012701892" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cell" />
+        </attvalues>
+      </node>
+      <node id="M-CSF" label="M-CSF">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="50.0" y="86.6025403784" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="endothelial_cells" label="endothelial_cells">
+        <ns0:color b="152" g="161" r="42" />
+        <ns0:size value="15" />
+        <ns0:position x="-46.9846310393" y="17.1010071663" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cell" />
+        </attvalues>
+      </node>
+      <node id="dendritic_cells" label="dendritic_cells">
+        <ns0:color b="152" g="161" r="42" />
+        <ns0:size value="15" />
+        <ns0:position x="-46.9846310393" y="-17.1010071663" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cell" />
+        </attvalues>
+      </node>
+      <node id="hepatocytes" label="hepatocytes">
+        <ns0:color b="152" g="161" r="42" />
+        <ns0:size value="15" />
+        <ns0:position x="50.0" y="0.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cell" />
+        </attvalues>
+      </node>
+      <node id="HGF" label="HGF">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-38.2683432365" y="92.3879532511" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="CXCL10" label="CXCL10">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="13.052619222" y="99.1444861374" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="CXCL12" label="CXCL12">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="6.12323399574e-15" y="100.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="CXCL1" label="CXCL1">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="25.8819045103" y="96.5925826289" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="CCL11" label="CCL11">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="100.0" y="0.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="CD106" label="CD106">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-60.8761429009" y="-79.3353340291" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="TNF-beta" label="TNF-beta">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="92.3879532511" y="-38.2683432365" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="CXCL9" label="CXCL9">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-13.052619222" y="99.1444861374" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL12" label="IL12">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-79.3353340291" y="60.8761429009" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL13" label="IL13">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-25.8819045103" y="-96.5925826289" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL15" label="IL15">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-13.052619222" y="-99.1444861374" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL16" label="IL16">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-96.5925826289" y="25.8819045103" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL17" label="IL17">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-1.83697019872e-14" y="-100.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IFN-gamma" label="IFN-gamma">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-70.7106781187" y="70.7106781187" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="TRAIL" label="TRAIL">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-70.7106781187" y="-70.7106781187" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL4" label="IL4">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="50.0" y="-86.6025403784" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL5" label="IL5">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="60.8761429009" y="-79.3353340291" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL2" label="IL2">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="38.2683432365" y="-92.3879532511" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL3" label="IL3">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-100.0" y="1.22464679915e-14" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL1" label="IL1">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="13.052619222" y="-99.1444861374" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="SCGF" label="SCGF">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="60.8761429009" y="79.3353340291" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="neutrophils" label="neutrophils">
+        <ns0:color b="152" g="161" r="42" />
+        <ns0:size value="15" />
+        <ns0:position x="38.3022221559" y="-32.1393804843" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cell" />
+        </attvalues>
+      </node>
+      <node id="IL8" label="IL8">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="-96.5925826289" y="-25.8819045103" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+      <node id="IL9" label="IL9">
+        <ns0:color b="0" g="153" r="133" />
+        <ns0:size value="15" />
+        <ns0:position x="79.3353340291" y="-60.8761429009" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="cytokine" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="CCL2" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="1" source="CCL2" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="2" source="CCL2" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="3" source="CCL2" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="4" source="CCL3" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="5" source="CCL3" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="6" source="CCL3" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="7" source="LIF" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="8" source="LIF" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="9" source="LIF" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="10" source="LIF" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="11" source="LIF" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="12" source="CCL7" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="13" source="CCL7" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="14" source="CCL7" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="15" source="CCL4" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="16" source="CCL4" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="17" source="CCL4" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="18" source="CCL4" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="19" source="CCL5" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="20" source="CCL5" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="21" source="CCL5" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="22" source="CCL5" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="23" source="T-cells" target="CCL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="24" source="T-cells" target="CCL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="25" source="T-cells" target="LIF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="26" source="T-cells" target="CD54" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="27" source="T-cells" target="CCL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="28" source="T-cells" target="NGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="29" source="T-cells" target="MIF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="30" source="T-cells" target="TNF-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="31" source="T-cells" target="IL6" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="32" source="T-cells" target="CCL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="33" source="T-cells" target="TRAIL" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="34" source="T-cells" target="VEGF-A" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="35" source="T-cells" target="G-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="36" source="T-cells" target="bFGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="37" source="T-cells" target="IL18" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="38" source="T-cells" target="CXCL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="39" source="T-cells" target="CXCL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="40" source="T-cells" target="CCL11" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="41" source="T-cells" target="TNF-beta" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="42" source="T-cells" target="CXCL9" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="43" source="T-cells" target="IL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="44" source="T-cells" target="IL13" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="45" source="T-cells" target="IL15" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="46" source="T-cells" target="IL16" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="47" source="T-cells" target="IL17" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="48" source="T-cells" target="IFN-gamma" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="49" source="T-cells" target="IL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="50" source="T-cells" target="IL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="51" source="T-cells" target="IL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="52" source="T-cells" target="IL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="53" source="T-cells" target="IL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="54" source="T-cells" target="SCGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="55" source="T-cells" target="IL8" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="56" source="T-cells" target="IL9" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="57" source="NGF" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="58" source="NGF" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="59" source="NGF" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="60" source="NGF" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="61" source="NGF" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="62" source="NGF" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="63" source="MIF" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="64" source="MIF" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="65" source="MIF" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="66" source="PDGF" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="67" source="PDGF" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="68" source="PDGF" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="69" source="PDGF" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="70" source="PDGF" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="71" source="PDGF" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="72" source="PDGF" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="73" source="NK-cells" target="CCL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="74" source="NK-cells" target="LIF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="75" source="NK-cells" target="CCL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="76" source="NK-cells" target="CCL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="77" source="NK-cells" target="TNF-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="78" source="NK-cells" target="IL6" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="79" source="NK-cells" target="CD54" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="80" source="NK-cells" target="G-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="81" source="NK-cells" target="M-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="82" source="NK-cells" target="CXCL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="83" source="NK-cells" target="CXCL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="84" source="NK-cells" target="CXCL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="85" source="NK-cells" target="TNF-beta" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="86" source="NK-cells" target="IL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="87" source="NK-cells" target="IL13" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="88" source="NK-cells" target="IFN-gamma" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="89" source="NK-cells" target="TRAIL" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="90" source="NK-cells" target="IL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="91" source="NK-cells" target="IL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="92" source="NK-cells" target="IL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="93" source="NK-cells" target="IL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="94" source="NK-cells" target="IL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="95" source="NK-cells" target="IL8" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="96" source="TNF-alpha" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="97" source="TNF-alpha" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="98" source="TNF-alpha" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="99" source="TNF-alpha" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="100" source="TNF-alpha" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="101" source="TNF-alpha" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="102" source="TNF-alpha" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="103" source="TNF-alpha" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="104" source="TNF-alpha" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="105" source="IL6" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="106" source="IL6" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="107" source="IL6" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="108" source="IL6" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="109" source="IL6" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="110" source="IL6" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="111" source="IL6" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="112" source="IL6" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="113" source="IL6" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="114" source="IFN-alpha" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="115" source="IFN-alpha" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="116" source="IFN-alpha" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="117" source="IFN-alpha" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="118" source="IFN-alpha" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="119" source="IFN-alpha" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="120" source="IFN-alpha" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="121" source="IFN-alpha" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="122" source="IFN-alpha" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="123" source="SCF" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="124" source="SCF" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="125" source="SCF" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="126" source="SCF" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="127" source="SCF" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="128" source="IL7" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="129" source="IL7" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="130" source="IL7" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="131" source="IL7" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="132" source="IL7" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="133" source="IL7" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="134" source="IL7" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="135" source="IL7" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="136" source="VEGF-A" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="137" source="VEGF-A" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="138" source="VEGF-A" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="139" source="VEGF-A" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="140" source="VEGF-A" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="141" source="VEGF-A" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="142" source="VEGF-A" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="143" source="G-CSF" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="144" source="G-CSF" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="145" source="G-CSF" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="146" source="G-CSF" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="147" source="bFGF" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="148" source="bFGF" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="149" source="bFGF" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="150" source="bFGF" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="151" source="bFGF" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="152" source="IL10" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="153" source="IL10" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="154" source="IL10" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="155" source="IL10" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="156" source="IL10" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="157" source="IL10" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="158" source="IL10" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="159" source="IL10" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="160" source="IL10" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="161" source="B-cells" target="CCL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="162" source="B-cells" target="CCL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="163" source="B-cells" target="NGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="164" source="B-cells" target="CCL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="165" source="B-cells" target="CCL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="166" source="B-cells" target="MIF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="167" source="B-cells" target="TNF-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="168" source="B-cells" target="IL6" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="169" source="B-cells" target="CD54" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="170" source="B-cells" target="TRAIL" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="171" source="B-cells" target="VEGF-A" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="172" source="B-cells" target="bFGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="173" source="B-cells" target="IL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="174" source="B-cells" target="IL18" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="175" source="B-cells" target="M-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="176" source="B-cells" target="CXCL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="177" source="B-cells" target="CXCL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="178" source="B-cells" target="CXCL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="179" source="B-cells" target="CD106" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="180" source="B-cells" target="TNF-beta" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="181" source="B-cells" target="CXCL9" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="182" source="B-cells" target="IL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="183" source="B-cells" target="IL13" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="184" source="B-cells" target="IFN-gamma" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="185" source="B-cells" target="IL7" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="186" source="B-cells" target="IL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="187" source="B-cells" target="IL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="188" source="B-cells" target="IL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="189" source="B-cells" target="SCGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="190" source="B-cells" target="IL8" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="191" source="IL18" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="192" source="IL18" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="193" source="IL18" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="194" source="IL18" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="195" source="IL18" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="196" source="IL18" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="197" source="IL18" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="198" source="fibroblasts" target="CCL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="199" source="fibroblasts" target="CCL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="200" source="fibroblasts" target="LIF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="201" source="fibroblasts" target="CCL7" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="202" source="fibroblasts" target="CCL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="203" source="fibroblasts" target="CCL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="204" source="fibroblasts" target="NGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="205" source="fibroblasts" target="MIF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="206" source="fibroblasts" target="PDGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="207" source="fibroblasts" target="TNF-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="208" source="fibroblasts" target="IL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="209" source="fibroblasts" target="CD54" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="210" source="fibroblasts" target="IFN-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="211" source="fibroblasts" target="SCF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="212" source="fibroblasts" target="VEGF-A" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="213" source="fibroblasts" target="G-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="214" source="fibroblasts" target="bFGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="215" source="fibroblasts" target="IL18" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="216" source="fibroblasts" target="M-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="217" source="fibroblasts" target="HGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="218" source="fibroblasts" target="CXCL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="219" source="fibroblasts" target="CXCL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="220" source="fibroblasts" target="CXCL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="221" source="fibroblasts" target="CCL11" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="222" source="fibroblasts" target="CD106" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="223" source="fibroblasts" target="CXCL9" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="224" source="fibroblasts" target="IL13" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="225" source="fibroblasts" target="IL15" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="226" source="fibroblasts" target="IL16" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="227" source="fibroblasts" target="IL17" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="228" source="fibroblasts" target="IL6" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="229" source="fibroblasts" target="IL7" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="230" source="fibroblasts" target="IL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="231" source="fibroblasts" target="IL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="232" source="fibroblasts" target="IL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="233" source="fibroblasts" target="IL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="234" source="fibroblasts" target="SCGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="235" source="fibroblasts" target="IL8" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="236" source="fibroblasts" target="IL9" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="237" source="macrophages" target="CCL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="238" source="macrophages" target="CCL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="239" source="macrophages" target="LIF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="240" source="macrophages" target="CCL7" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="241" source="macrophages" target="CCL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="242" source="macrophages" target="CCL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="243" source="macrophages" target="NGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="244" source="macrophages" target="MIF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="245" source="macrophages" target="PDGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="246" source="macrophages" target="TRAIL" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="247" source="macrophages" target="TNF-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="248" source="macrophages" target="IL6" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="249" source="macrophages" target="CD54" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="250" source="macrophages" target="IFN-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="251" source="macrophages" target="SCF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="252" source="macrophages" target="VEGF-A" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="253" source="macrophages" target="G-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="254" source="macrophages" target="bFGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="255" source="macrophages" target="IL18" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="256" source="macrophages" target="M-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="257" source="macrophages" target="HGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="258" source="macrophages" target="CXCL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="259" source="macrophages" target="CXCL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="260" source="macrophages" target="CCL11" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="261" source="macrophages" target="CD106" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="262" source="macrophages" target="TNF-beta" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="263" source="macrophages" target="CXCL9" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="264" source="macrophages" target="IL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="265" source="macrophages" target="IL15" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="266" source="macrophages" target="IL16" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="267" source="macrophages" target="IL17" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="268" source="macrophages" target="IFN-gamma" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="269" source="macrophages" target="IL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="270" source="macrophages" target="IL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="271" source="macrophages" target="IL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="272" source="macrophages" target="IL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="273" source="macrophages" target="IL8" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="274" source="M-CSF" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="275" source="M-CSF" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="276" source="M-CSF" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="277" source="M-CSF" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="278" source="endothelial_cells" target="CCL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="279" source="endothelial_cells" target="CCL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="280" source="endothelial_cells" target="LIF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="281" source="endothelial_cells" target="CCL7" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="282" source="endothelial_cells" target="CCL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="283" source="endothelial_cells" target="CCL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="284" source="endothelial_cells" target="NGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="285" source="endothelial_cells" target="MIF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="286" source="endothelial_cells" target="PDGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="287" source="endothelial_cells" target="TRAIL" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="288" source="endothelial_cells" target="TNF-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="289" source="endothelial_cells" target="IL6" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="290" source="endothelial_cells" target="CD54" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="291" source="endothelial_cells" target="IFN-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="292" source="endothelial_cells" target="SCF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="293" source="endothelial_cells" target="VEGF-A" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="294" source="endothelial_cells" target="G-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="295" source="endothelial_cells" target="bFGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="296" source="endothelial_cells" target="IL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="297" source="endothelial_cells" target="CCL27" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="298" source="endothelial_cells" target="IL18" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="299" source="endothelial_cells" target="M-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="300" source="endothelial_cells" target="HGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="301" source="endothelial_cells" target="CXCL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="302" source="endothelial_cells" target="CXCL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="303" source="endothelial_cells" target="CXCL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="304" source="endothelial_cells" target="CCL11" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="305" source="endothelial_cells" target="CD106" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="306" source="endothelial_cells" target="TNF-beta" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="307" source="endothelial_cells" target="CXCL9" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="308" source="endothelial_cells" target="IL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="309" source="endothelial_cells" target="IL13" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="310" source="endothelial_cells" target="IL15" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="311" source="endothelial_cells" target="IL16" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="312" source="endothelial_cells" target="IL17" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="313" source="endothelial_cells" target="IFN-gamma" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="314" source="endothelial_cells" target="IL7" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="315" source="endothelial_cells" target="IL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="316" source="endothelial_cells" target="IL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="317" source="endothelial_cells" target="IL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="318" source="endothelial_cells" target="IL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="319" source="endothelial_cells" target="IL8" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="320" source="dendritic_cells" target="CCL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="321" source="dendritic_cells" target="CCL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="322" source="dendritic_cells" target="CD54" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="323" source="dendritic_cells" target="CCL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="324" source="dendritic_cells" target="TRAIL" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="325" source="dendritic_cells" target="TNF-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="326" source="dendritic_cells" target="IL6" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="327" source="dendritic_cells" target="CCL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="328" source="dendritic_cells" target="IFN-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="329" source="dendritic_cells" target="SCF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="330" source="dendritic_cells" target="VEGF-A" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="331" source="dendritic_cells" target="G-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="332" source="dendritic_cells" target="IL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="333" source="dendritic_cells" target="IL18" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="334" source="dendritic_cells" target="M-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="335" source="dendritic_cells" target="CXCL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="336" source="dendritic_cells" target="CXCL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="337" source="dendritic_cells" target="CXCL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="338" source="dendritic_cells" target="CD106" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="339" source="dendritic_cells" target="TNF-beta" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="340" source="dendritic_cells" target="CXCL9" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="341" source="dendritic_cells" target="IL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="342" source="dendritic_cells" target="IL13" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="343" source="dendritic_cells" target="IL15" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="344" source="dendritic_cells" target="IL16" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="345" source="dendritic_cells" target="IL17" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="346" source="dendritic_cells" target="IFN-gamma" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="347" source="dendritic_cells" target="IL7" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="348" source="dendritic_cells" target="IL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="349" source="dendritic_cells" target="IL8" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="350" source="hepatocytes" target="CCL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="351" source="hepatocytes" target="NGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="352" source="hepatocytes" target="CCL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="353" source="hepatocytes" target="CCL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="354" source="hepatocytes" target="TNF-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="355" source="hepatocytes" target="IL6" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="356" source="hepatocytes" target="CD54" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="357" source="hepatocytes" target="SCF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="358" source="hepatocytes" target="VEGF-A" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="359" source="hepatocytes" target="bFGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="360" source="hepatocytes" target="IL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="361" source="hepatocytes" target="IL18" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="362" source="hepatocytes" target="M-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="363" source="hepatocytes" target="HGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="364" source="hepatocytes" target="CXCL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="365" source="hepatocytes" target="CXCL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="366" source="hepatocytes" target="CXCL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="367" source="hepatocytes" target="CCL11" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="368" source="hepatocytes" target="CD106" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="369" source="hepatocytes" target="CXCL9" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="370" source="hepatocytes" target="IL15" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="371" source="hepatocytes" target="IL17" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="372" source="hepatocytes" target="IFN-gamma" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="373" source="hepatocytes" target="IL7" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="374" source="hepatocytes" target="IL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="375" source="hepatocytes" target="IL8" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="376" source="HGF" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="377" source="HGF" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="378" source="HGF" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="379" source="HGF" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="380" source="CXCL10" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="381" source="CXCL10" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="382" source="CXCL12" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="383" source="CXCL12" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="384" source="CXCL12" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="385" source="CXCL12" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="386" source="CXCL12" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="387" source="CXCL12" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="388" source="CXCL1" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="389" source="CXCL1" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="390" source="CXCL1" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="391" source="CCL11" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="392" source="CCL11" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="393" source="TNF-beta" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="394" source="CXCL9" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="395" source="IL12" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="396" source="IL12" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="397" source="IL12" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="398" source="IL12" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="399" source="IL12" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="400" source="IL12" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="401" source="IL12" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="402" source="IL12" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="403" source="IL13" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="404" source="IL13" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="405" source="IL13" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="406" source="IL13" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="407" source="IL13" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="408" source="IL13" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="409" source="IL13" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="410" source="IL13" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="411" source="IL15" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="412" source="IL15" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="413" source="IL15" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="414" source="IL15" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="415" source="IL15" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="416" source="IL15" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="417" source="IL15" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="418" source="IL15" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="419" source="IL16" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="420" source="IL16" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="421" source="IL16" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="422" source="IL17" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="423" source="IL17" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="424" source="IL17" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="425" source="IL17" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="426" source="IL17" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="427" source="IL17" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="428" source="IFN-gamma" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="429" source="IFN-gamma" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="430" source="IFN-gamma" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="431" source="IFN-gamma" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="432" source="IFN-gamma" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="433" source="IFN-gamma" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="434" source="IFN-gamma" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="435" source="IFN-gamma" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="436" source="TRAIL" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="437" source="TRAIL" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="438" source="TRAIL" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="439" source="TRAIL" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="440" source="TRAIL" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="441" source="TRAIL" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="442" source="IL4" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="443" source="IL4" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="444" source="IL4" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="445" source="IL4" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="446" source="IL4" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="447" source="IL4" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="448" source="IL4" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="449" source="IL4" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="450" source="IL4" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="451" source="IL5" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="452" source="IL5" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="453" source="IL5" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="454" source="IL2" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="455" source="IL2" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="456" source="IL2" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="457" source="IL2" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="458" source="IL2" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="459" source="IL2" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="460" source="IL2" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="461" source="IL2" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="462" source="IL2" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="463" source="IL3" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="464" source="IL3" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="465" source="IL3" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="466" source="IL3" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="467" source="IL3" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="468" source="IL3" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="469" source="IL1" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="470" source="IL1" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="471" source="IL1" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="472" source="IL1" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="473" source="IL1" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="474" source="IL1" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="475" source="IL1" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="476" source="IL1" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="477" source="IL1" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="478" source="neutrophils" target="CCL2" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="479" source="neutrophils" target="CCL3" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="480" source="neutrophils" target="LIF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="481" source="neutrophils" target="CCL7" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="482" source="neutrophils" target="CD54" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="483" source="neutrophils" target="CCL5" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="484" source="neutrophils" target="TRAIL" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="485" source="neutrophils" target="TNF-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="486" source="neutrophils" target="IL6" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="487" source="neutrophils" target="CCL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="488" source="neutrophils" target="IFN-alpha" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="489" source="neutrophils" target="SCF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="490" source="neutrophils" target="VEGF-A" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="491" source="neutrophils" target="IL18" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="492" source="neutrophils" target="M-CSF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="493" source="neutrophils" target="HGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="494" source="neutrophils" target="CXCL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="495" source="neutrophils" target="CXCL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="496" source="neutrophils" target="CXCL9" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="497" source="neutrophils" target="IL12" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="498" source="neutrophils" target="IL15" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="499" source="neutrophils" target="IL16" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="500" source="neutrophils" target="IL17" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="501" source="neutrophils" target="IFN-gamma" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="502" source="neutrophils" target="IL10" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="503" source="neutrophils" target="IL4" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="504" source="neutrophils" target="IL1" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="505" source="neutrophils" target="SCGF" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="506" source="neutrophils" target="IL8" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="507" source="neutrophils" target="IL9" weight="1">
+        <ns0:color b="195" g="113" r="108" />
+      </edge>
+      <edge id="508" source="IL8" target="macrophages" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="509" source="IL8" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="510" source="IL8" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="511" source="IL8" target="NK-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="512" source="IL8" target="endothelial_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="513" source="IL8" target="dendritic_cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="514" source="IL8" target="hepatocytes" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="515" source="IL8" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="516" source="IL8" target="B-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="517" source="IL9" target="fibroblasts" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="518" source="IL9" target="neutrophils" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+      <edge id="519" source="IL9" target="T-cells" weight="2">
+        <ns0:color b="130" g="54" r="211" />
+      </edge>
+    </edges>
+  </graph>
+</gexf>
