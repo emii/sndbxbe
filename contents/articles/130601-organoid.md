@@ -6,15 +6,17 @@ Summary: Analysis and segmentetion of tissue culture organoids
 Abstract: Primary cell culture of a single LGR5+ cell from the mouse gut is imaged for 48h, segmented and tracked.
 References: C:\Users\ozomatliopochtli\Library\Bibtex\Organoid.bib
 
+**Note about figures:** Figures are not displayed. To see the figure please make sure Javascript is enabled, and click in the corresponding link, caption can be unhidden by mouse hover once that the image is displayed.
+
 [TOC]
 
 # Introduction
 
-Organoids are crypt-villus shaped structures established from long term expansion of self-renewing stems cells from the mouse small-intestine epithelium. In mouse, the small intestine is established from a single layer of cells and arises from the vigorous proliferation of epithelial tissue around embryonic day 14.5 (E14.5). In later stages, the epithelium is shaped into protrusions (the prospective villi) while cell proliferation is restricted to small compartments which after the third week mature into crypts (E18.5). The native epithelial tissue has a distinctive hierarchical structure where stem cells reside at the position +4, and Paneth cells occupy the positions 1 to 3 from the bottom. Stem cells produce proliferating cells (transit amplifying) which later differentiate into one mature cell lineage ([Radke & Clevers 2005](#Radke2005)). Commited cells from neighboring crypts migrate toward one common villus tip, hence villi origin is polyclonal (Schmidt et al. 1988). In mouse is known to have rapid regeneration cycles with a turnover rate of around 5 days where tissue homeostasis is balanced by apoptosis at the tip of the villi (see <b><a class="fancybox" rel="organoid" data-title-id="caption-1" href="/static/images/organoid/villus-crypt.png" title="click to enlarge">Figure 1</a></b>).
+Organoids are crypt-villus shaped structures established from long term expansion of self-renewing stems cells from the mouse small-intestine epithelium. In mouse, the small intestine is established from a single layer of cells and arises from the vigorous proliferation of epithelial tissue around embryonic day 14.5 (E14.5). In later stages, the epithelium is shaped into protrusions (the prospective villi) while cell proliferation is restricted to small compartments which after the third week mature into crypts (E18.5). The native epithelial tissue has a distinctive hierarchical structure where around 15 stem cells reside at the position +4 dividing every 24 hours, Paneth cells occupy the positions 1 to 3 from the bottom. Stem cells produce proliferating cells (transit amplifying) which generate 16 to 32 new cell that later stochastically adopt a stem cell fate or differentiate into one mature cell lineage depending on the available space ([Radtke & Clevers 2005](#Radtke2005), [Sato & Clevers 2013](#Sato2013)). Commited cells from neighboring crypts migrate toward one common villus tip, hence villi origin is polyclonal (Schmidt et al. 1988). In mouse is known to have rapid regeneration cycles with a turnover rate of around 5 days where tissue homeostasis is balanced by apoptosis at the tip of the villi (see <b><a class="fancybox" rel="organoid" data-title-id="caption-1" href="/static/images/organoid/villus-crypt.png" title="click to enlarge">Figure 1</a></b>). 
 <div class="img-print"><img src="/static/images/organoid/villus-crypt.png" alt="click to enlarge"/></div>
 <div id="caption-1" class="caption-print"><b>Figure 1. </b>Anatomy of the crypt-villus structure in the adult small intestine. Villi are formed from the differentiation (green) and migration of cells proliferating (light blue) in the crypt domain. Cells with stem cell properties (dark blue) recide above Paneth cells (yellow) near the crypt bottom (from [Reya & Clevers 2005](#Reya2005)).</div>
 
-In recent years the establishment of advanced culture systems allowing the long term expansion while preserving the basic physiololgy of the villus-crypt has allowed the isolation of complex tissue structures, allowing for a more controled environment ([Sato et al. 2009](#Sato2009)). Charcteristics that resemble the native gut environment like: i)stem-cell hierarchy, ii) differentiated cell types, and iii) multi domain architecture. It has been proven that these self-organizing structures arise not only from entire isolated crypts but from single stem cells soley identified by the expression of the LGR5 gene, a marker for stem cells at the base of the crypts in mouse small intestine ([Barker et al. 2007](#Barker2007)). Pluriopotency and capability of renewal of the epithelum for prolonged time. In contrast with the general view of adult stem cells, these Lgr5$^+$ cells are not quiecent but generally rapidly cycling ([Barker et al. 2007](#Barker2007))
+In recent years the establishment of advanced culture systems allowing the long term expansion while preserving the basic physiololgy of the villus-crypt has allowed the isolation of complex tissue structures, allowing for a more controled environment ([Sato et al. 2009](#Sato2009)). Charcteristics that resemble the native gut environment like: i)stem-cell hierarchy and self renewal, ii) cell type composition, and iii) multi-domain architecture. It has been proven that these self-organizing structures arise not only from entire isolated crypts but from single stem cells soley identified by the expression of the LGR5 gene, a marker for stem cells at the base of the crypts in mouse small intestine ([Barker et al. 2007](#Barker2007)). Pluriopotency and capability of renewal of the epithelum for prolonged time. In contrast with the general view of adult stem cells, these Lgr5$^+$ cells are not quiecent but generally rapidly cycling ([Barker et al. 2007](#Barker2007))
 
 In culture, the organoid three dimensional structure arises from single sorted Lgr5$^+$ cells which by multiple division events, self-organize into an ordered crypt-villus domains.This architecture is compared to the native small intestine epithelium by the formation of analogous domains (see <a class="fancybox" rel="organoid" data-title-id="caption-X" href="/static/images/organoid/organoid-structure.png" title="organoid">Figure X</a>)
 
@@ -41,9 +43,26 @@ This environment isolated organotypic tissue offers an exquisite resource for th
 
 ## System under investigation
 #Experimetal Approach
-##Cell culture and fluorescence in situ hybridization.
-##Image acquisition
-##Image analysis
+## Organoid primary culture preparation
+
+_As described in [Sato et al. 2009](#Sato2009)_ and performed by Gerald Swank
+
+Crypts were released from murine small intestine in PBS/EDTA. Single crypts were mixed and plated in Matrigel(BDBioscience) in 24-well plates. After polymerization, Matrigel was supplemented with crypt culture medium containing growth factors (EGF, R-spondin 1 and Noggin).
+
+Single crypts were cultured for two generations under conditioned medium enriching for stem cells. THe resulting organoids were mechanically dissociated and trypsinized to obtain single cells. Dissociated cells were collected in culture medium and embedded in Matrigel supplemented with growth factors at 1 cell per well (in 96-well plates).
+
+Organoids were directly genetically manipulated by liposome-mediated transfection. Lipofectamine was used to transfect organoids with the histone H2A-GFP BAC. After two days, stable clones were selected for G814 resistance as well as for ubiquitios expression of H2A-GFP.
+
+## Image acquisition
+
+After selection and conditioned medium removal, sphere-like organoids started to shape into crypt-villus domains. Imaging started 24h upon the first bud event for most of the organoids.
+
+All images were acquired at 40× magnification (oil immersion, high numerical aperture objective) on a confocal PerkinElmer Ultraview VoX spinning disk microscope equipped with a high-resolution charge-coupled device (CCD) camera and controlled by Volocity software.
+
+Each time point (20 minutes interval), we sequentially acquired three-dimensional stacks of fluorescence images for GFP (H2A-EGFP). Our exposure times were roughly 200 ms. The pixel size was 0.32μm, and the spacing between consecutive planes in our stacks was 1.0 μm for an anisotropic voxel size. Organoid evolution was followed up to 48 hours.
+
+
+## Image analysis
 
 The penetration limit of these advanced forms of microscopy is 
 governed by a second physical parameter, the transport mean 
