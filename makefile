@@ -30,7 +30,7 @@ contents:
 serve:
 	cd $(ODIR) $(AND) python -m SimpleHTTPServer 
 
-deploy:
+push:
 	git add -A
 	git commit -m 'update'
 	git push
@@ -38,4 +38,4 @@ deploy:
 clean:
 	$(RM) $(call FixPath, $(OBJ))
 
-.PHONY: contents draft serve deploy clean #not objects
+.PHONY: contents draft serve push clean #not objects
