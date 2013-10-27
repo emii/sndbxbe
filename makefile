@@ -31,6 +31,7 @@ serve:
 	cd $(ODIR) $(AND) python -m SimpleHTTPServer 
 
 push:
+	git status
 	git add -A
 	git commit -m 'update'
 	git push
