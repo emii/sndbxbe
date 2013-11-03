@@ -1,4 +1,4 @@
-ifeq ($(OS),Windows_NT)
+ifeq ($(OS),Windows_NT) 
 
 	RM = del /s /q
 	FixPath = $(subst /,\,$1)
@@ -31,6 +31,13 @@ serve:
 	cd $(ODIR) $(AND) python -m SimpleHTTPServer 
 
 push:
+	git status
+	git add -A
+	git commit -m 'update'
+	git push
+
+deploy:
+	cd $(ODIR)
 	git status
 	git add -A
 	git commit -m 'update'

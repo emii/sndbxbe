@@ -530,6 +530,9 @@
   title = {Conservation Tracking},
   journal = {IEEE International Conference on Computer Vision (ICCV 2013)},
   year = {2013},
+  volume = {10},
+  pages = {517--30},
+  number = {8},
   month = {December 3{--}6},
   address = {Sydney, Australia}
 }

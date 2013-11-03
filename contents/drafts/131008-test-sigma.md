@@ -36,7 +36,7 @@ function init() {
 
   // Parse a GEXF encoded file to fill the graph
   // (requires "sigma.parseGexf.js" to be included)
-  sigInst.parseGexf('/static/D3/test2.gexf');
+  sigInst.parseGexf('/static/data/test2.gexf');
 
   (function(){
     var popUp;

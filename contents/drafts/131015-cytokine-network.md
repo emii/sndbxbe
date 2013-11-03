@@ -45,7 +45,7 @@ function init() {
     
       // Parse a GEXF encoded file to fill the graph
       // (requires "sigma.parseGexf.js" to be included)
-      sigInst.parseGexf('/static/D3/nt.gexf');
+      sigInst.parseGexf('/static/data/nt.gexf');
     
 
     sigInst.bind('overnodes',function(event){
@@ -93,7 +93,7 @@ function init() {
     
       // Parse a GEXF encoded file to fill the graph
       // (requires "sigma.parseGexf.js" to be included)
-      sigInst2.parseGexf('/static/D3/nt2.gexf');
+      sigInst2.parseGexf('/static/data/nt2.gexf');
     
 
     sigInst2.bind('overnodes',function(event){
@@ -141,7 +141,7 @@ function init() {
     
       // Parse a GEXF encoded file to fill the graph
       // (requires "sigma.parseGexf.js" to be included)
-      sigInst3.parseGexf('/static/D3/nt3.gexf');
+      sigInst3.parseGexf('/static/data/nt3.gexf');
     
 
      // Draw the graph :

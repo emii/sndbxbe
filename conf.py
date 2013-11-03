@@ -49,15 +49,15 @@ ARTICLE_DIR = 'articles'
 #static paths
 THEME_STATIC_DIR = 'static'
 THEME_STATIC_PATHS = ['static',]
-OUTPUT_PATH = 'output/'
 DELETE_OUTPUT_DIRECTORY = False
 #folders to be copied to output static
 STATIC_SAVE_AS = 'static/{path}'
 STATIC_URL = 'static/{path}'
 STATIC_PATHS = ['extra/robots.txt',
                 'extra/favicon.ico',
-                'documents',]
-                #'images',]
+                'documents',
+                'data',
+                'images',]
 EXTRA_PATH_METADATA = {'extra/robots.txt':{'path':'../robots.txt'},'extra/favicon.ico':{'path':'../favicon.ico'},}
 #plugins
 PLUGIN_PATH = "plugins"
@@ -69,3 +69,4 @@ IMAGE_PATH = "images/gallery"
 THUMBNAIL_DIR = "static/images/thumbnails"
 THUMBNAIL_SIZES = {'thumbnail_wide' : '200x?'}
 #PAGINATION_PATTERNS = ((1, '{base_name}/', '{base_name}/index.html'), (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'), )
+OUTPUT_PATH = 'output/'

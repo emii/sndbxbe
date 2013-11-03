@@ -1,6 +1,6 @@
 Date: 2013-10-26
 Title: Image analysis of <em>Organoid</em> primary cell culture
-Category: projects
+Category: showcase
 Tags: research, organoid, image processing, HCI
 Summary: Analysis and segmentation of tissue culture organoids
 Abstract: Organoids are three-dimensional tissue structures grown in culture from a single adult stem cell of the mouse small intestine. Its shape and physiology resemble the in-vivo situation, which makes them a very suitable model for studying tissue renewal and morphogenesis. Here, timelapse fluorescence microscopy images from the organoid growth were analyzed with state-of-the-art algorithms for cell tracking.  
