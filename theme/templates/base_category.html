@@ -11,7 +11,7 @@
 		  {% block css %}{% endblock %}
         </style>
     <script src="{{SITEURL}}/static/scripts/jquery-1.7.2.min.js"></script>
-    {% if RELATIVE_URLS == False %}
+    {% if DEPLOY == True %}
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
