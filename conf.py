@@ -20,7 +20,7 @@ HIGHLIGHT_CSS_FILE = 'solarized_dark.css'
 DECK_CSS_STYLE = 'sndbx.css'
 #API key for google analytics
 GA_ACCOUNT = 'UA-41003145-2'
-DEPLOY = True
+DEPLOY = False
 #SOCIAL = (('twitter', 'http://twitter.com/emiizquierdo'),
 #          ('8tracks', 'http://8tracks.com/emi'),
 #          ('github', 'http://github.com/emii'),)
