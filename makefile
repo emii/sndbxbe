@@ -46,4 +46,8 @@ deploy:
 clean:
 	$(RM) $(call FixPath, $(OBJ))
 
-.PHONY: contents draft serve push clean #not objects
+#provide ifile and ofile
+slides:
+	python slidesMD/m2d contents/slides/$(ifile) slidesMD/deck.html > contents/articles/$(ofile)
+
+.PHONY: contents draft serve push slides clean #not objects

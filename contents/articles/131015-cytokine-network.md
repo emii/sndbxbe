@@ -1,7 +1,7 @@
 Date: 2013-10-15
 Title: Cytokine network
 Category: projects
-Tags: misc
+Tags: TIGA
 Template: article
 Summary: Cytokine network derived from information collected form COPE database
 

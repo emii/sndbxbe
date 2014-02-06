@@ -20,7 +20,7 @@ HIGHLIGHT_CSS_FILE = 'solarized_dark.css'
 DECK_CSS_STYLE = 'sndbx.css'
 #API key for google analytics
 GA_ACCOUNT = 'UA-41003145-2'
-DEPLOY = False
+DEPLOY = True
 #SOCIAL = (('twitter', 'http://twitter.com/emiizquierdo'),
 #          ('8tracks', 'http://8tracks.com/emi'),
 #          ('github', 'http://github.com/emii'),)
@@ -69,4 +69,4 @@ IMAGE_PATH = "images/gallery"
 THUMBNAIL_DIR = "static/images/thumbnails"
 THUMBNAIL_SIZES = {'thumbnail_wide' : '200x?'}
 #PAGINATION_PATTERNS = ((1, '{base_name}/', '{base_name}/index.html'), (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'), )
-OUTPUT_PATH = 'output/'
+OUTPUT_PATH = 'output'
