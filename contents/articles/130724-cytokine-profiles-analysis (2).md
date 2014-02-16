@@ -1,4 +1,4 @@
-Title: Analysis of cytokine profiling from liver metastasis samples
+Title: Second Analysis of cytokine profiling from liver metastasis samples
 Date: 2013-07-24
 Summary: A Brief analysis of the cytokine proifiles from liver metastasis of colorectal cancer
 Category: projects

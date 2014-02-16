@@ -1,4 +1,4 @@
-Title: Model idea
+Title: Model idea 2
 Date: 2013-07-24
 Summary: Posing and delimiting the cytokine model
 Category: projects
